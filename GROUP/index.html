@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>wode 动画项目</title>
+    <link rel="shortcut icon" sizes="64x64" type="image/x-icon"
+        href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566361717934&di=793fa6fd163d0a16cba02db04bc4d1e3&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F02%2F68%2F40%2F5a17e3e9289da_610.jpg">
+    <link rel="stylesheet" href="assets/css/common.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/top.css" type="text/css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/common.js" defer="defer"></script>
+    <script src="assets/js/top.js" defer="defer"></script>
+</head>
+
+<body class="top">
+    <div id="wrap">
+        <header>
+            <!-- 进度条动画 -->
+            <div id="progress" class="gradation"></div>
+            <!-- 导航栏 -->
+            <p id="logo"><a href="/">
+                    <!-- xmlns声明一个命名空间　x:左上角开始的横坐标点y:左上角往下的纵坐标点width: viewbox的宽度height: viewbox的高度 -->
+                    <text font-weight="bold" color="white" font-style="normal" stroke="#000"
+                        transform="matrix(0.4810810685157776,0,0,1,127.3945976793766,0) " xml:space="preserve"
+                        text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+                        font-size="24" id="svg_2" y="186.4375" x="245.5" stroke-width="0"
+                        fill="#000000">Bcy&amp;Alen<br />One Group</text>
+                    </svg></a></p>
+            <p id="btnNav"><span class="line01"></span><span class="line02"></span><span class="line03"></span></p>
+            <p class="block-entry-button gradation"><span>ENTRY</span></p>
+            <div id="gNav" class="gradation">
+                <div class="inner">
+                    <ul>
+                        <li><a href="/"><span><span>T</span><span>O</span><span>P</span></span></a></li>
+                        <li><a href="/about/"><span><span>W</span><span>h</span><span>a</span><span>t</span><span>'</span><span>s</span>
+                                    <span>t</span><span>h</span><span>e</span>
+                                    <span>W</span><span>I</span><span>L</span><span>L</span><span>P</span><span>O</span><span>W</span><span>E</span><span>R</span></span></a>
+                        </li>
+                        <li><a
+                                href="/group/"><span><span>G</span><span>r</span><span>o</span><span>u</span><span>p</span></span></a>
+                        </li>
+                        <li><a href="/dream/"><span><span>N</span><span>e</span><span>w</span>
+                                    <span>D</span><span>r</span><span>e</span><span>a</span><span>m</span><span>e</span></span></a>
+                        </li>
+                        <li><a href="/deed/"><span><span>D</span><span>e</span><span>e</span><span>d</span></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="block-movie">
+                <div id="yt-movie-top" class="vtb" data-movie-id="BdlU1-sZ4Y4"></div>
+                <div class="bg-pan ltb">
+                    <div class="pan-image"></div>
+                    <div class="pan-image"></div>
+                </div>
+            </div>
+
+            <div id="secIntro" class="block">
+                <div class="intro-animation-block" data-animation-index="1" data-body-duration="2000">
+                    <div class="block-text">
+                        <h3 class="jp">Bcy&ALen GROUP<br>
+                            全新的<br class="tbi">
+                            团队组合</h3>
+                    </div>
+                </div>
+                <div class="intro-animation-block" data-animation-index="2" data-body-duration="2000">
+                    <div class="block-text">
+                        <h3 class="jp">WILLPOWER 是<br class="tbi">
+                            一股神秘的意志力量。</h3>
+                    </div>
+                </div>
+                <div class="intro-animation-block" data-animation-index="3" data-body-duration="3000">
+                    <div class="block-text">
+                        <h3 class="jp">意志 <br class="tbi">
+                            明确的目的性、<br>
+                            有计划性、<br class="tbi">
+                            支配自我。</h3>
+                    </div>
+                </div>
+                <div class="intro-animation-block" data-animation-index="4" data-body-duration="2000">
+
+                    <div class="block-text">
+                        <h3 class="jp">成为你想成为的人。</h3>
+                    </div>
+                </div>
+                <div class="intro-animation-final-block">
+                    <div class="block-caption">
+                        <h4 class="en" style="font-size: 28px"><span>Bcy&Alen GROUP</span><span>意志成就人生</span></h4>
+                    </div>
+                    <div class="copy"> <span class="cover"></span>
+                        <h1 style="position: relative">
+                            <p class='first '>WILLPOWER</p>
+                        </h1>
+                    </div>
+                </div>
+                <div class="top-skip"> <a href="#" class="bt-skip">SKIP</a> </div>
+                <p class="scroll"><a href="#" class="bt-scroll"></a></p>
+            </div>
+
+            <div class="bgMain">
+                <section id="secWhatIsGate">
+                    <div class="inner">
+                        <div class="secMark startAnim ">
+                            <div class="fair boxMark  gradation">
+                                <div class="mark-container">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                </div>
+                            </div>
+                            <div class="simple boxMark">
+                                <div class="mark-container">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                    <span class="bar4"></span>
+                                </div>
+                            </div>
+                            <div class="innovative boxMark">
+                                <div class="mark-container">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+
+                <section id="secGroup" class="startAnim">
+                    <div class="inner">
+                        <p class="headLine"></p>
+                        <div class="bg">
+                            <ul>
+                                <li>
+                                    <div class="ch-info">
+                                        <div class="siz">
+                                            <img src="assets/images/top/grounp_bg01.png" alt="" />
+                                        </div>
+                                        <div class="ch-info-back">
+                                            <h3>willpower strong</h3>
+                                            <p>Be what you want to be<a href="##">Just Do it</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ch-info">
+                                        <div class="siz">
+                                            <img src="assets/images/top/grounp_bg02.png" alt="" />
+                                        </div>
+                                        <div class="ch-info-back">
+                                            <h3>life is fantasy</h3>
+                                            <p>Work hard for your dreams <a href="##">Success is not easy.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ch-info">
+                                        <div class="siz">
+                                            <img src="assets/images/top/grounp_bg03.png" alt="" />
+                                        </div>
+                                        <div class="ch-info-back">
+                                            <h3>Willpower is your goddess of fortune</h3>
+                                            <p>The stronger your willpower the stronger you will be. <a href="##">to be
+                                                    number 1</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+
+                                    <span><img src="assets/images/top/grounp_bg04.png" alt="" /></span></li>
+                                <li>
+
+                                    <span><img src="assets/images/top/grounp_bg05.png" alt="" /></span></li>
+                            </ul>
+                        </div>
+                        <span id="grop">
+                            <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384.26 108.62">
+                                    <title>Group</title>
+                                    <path
+                                        d="M45.61,56H60.36v8.66a30.12,30.12,0,0,1-12.79,2.75,24.56,24.56,0,0,1-12.31-3,21.43,21.43,0,0,1-8.37-8.49,25.29,25.29,0,0,1-3-12.37q0-10.87,6.57-17.39T47.81,19.6q11.84,0,20.32,9.33L83.19,15.3A40.52,40.52,0,0,0,67.65,3.94,53.67,53.67,0,0,0,46.62,0a51,51,0,0,0-24,5.56A41.17,41.17,0,0,0,6,21,42.62,42.62,0,0,0,0,43.51,42.62,42.62,0,0,0,6,66,41.5,41.5,0,0,0,22.47,81.46,49.93,49.93,0,0,0,46.14,87a65.7,65.7,0,0,0,18.64-2.75,54.83,54.83,0,0,0,16.5-7.89V38.55H45.61Z" />
+                                    <path
+                                        d="M126.09,21.44a34.37,34.37,0,0,1,12.78-2.22V39.74a46.61,46.61,0,0,0-5.16-.36q-7.32,0-11.46,4t-4.14,12.12V85.34H95.31v-65H117v7.8A21.22,21.22,0,0,1,126.09,21.44Z" />
+                                    <path
+                                        d="M162.27,82.1a32.15,32.15,0,0,1-17.88-29.4,32.05,32.05,0,0,1,17.82-29.22,44.19,44.19,0,0,1,37.86,0,31.91,31.91,0,0,1,13.08,11.88,32.46,32.46,0,0,1,4.68,17.34,32.77,32.77,0,0,1-4.68,17.4,32.19,32.19,0,0,1-13.08,12,43.5,43.5,0,0,1-37.8,0ZM191,64.16q3.84-4.14,3.84-11.46T191,41.42a13.91,13.91,0,0,0-19.68,0q-3.84,4.08-3.84,11.28t3.84,11.46a13.76,13.76,0,0,0,19.68,0Z" />
+                                    <path
+                                        d="M296.79,20.3v65H275.07v-7a23.37,23.37,0,0,1-8.64,6,28.19,28.19,0,0,1-10.68,2q-12.6,0-20.1-7.44t-7.5-22.32V20.3H251V52.94q0,7.32,2.76,10.68t8,3.36a11.35,11.35,0,0,0,8.82-3.78Q274,59.42,274,51.62V20.3Z" />
+                                    <path
+                                        d="M368.48,23.36A30.17,30.17,0,0,1,380,35.12a35.67,35.67,0,0,1,4.26,17.7A35.67,35.67,0,0,1,380,70.52a30.17,30.17,0,0,1-11.52,11.76,32,32,0,0,1-16.14,4.14q-11.4,0-18.11-6.84v29h-22.8V20.3h21.72v6.48q6.35-7.56,19.19-7.56A32,32,0,0,1,368.48,23.36Zm-11.09,40.8c2.55-2.76,3.84-6.54,3.84-11.34s-1.29-8.58-3.84-11.34a13.76,13.76,0,0,0-19.68,0q-3.85,4.14-3.85,11.34t3.85,11.34a13.76,13.76,0,0,0,19.68,0Z" />
+                                </svg></h2>
+                        </span>
+                        <span>
+                            <p class="lead"></p>
+                        </span>
+                        <div class="btnArea">
+                            <div class="box01">
+                                <p><span>Bcy&Alen GROUP<br class="pc">你现在的努力<br>
+                                        是为了你更好的选择</span></p>
+                            </div>
+                            <p class="btn detectionAnimated"><a href="group/" class="gradation"><span>Group<svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41">
+                                            <circle cx="20.5" cy="20.5" r="20" />
+                                            <polyline points="21.42 15.92 26 20.5 21.42 25.08" />
+                                            <line x1="26" y1="20.5" x2="15" y2="20.5" /></svg></span></a></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="secNewGraduates">
+                    <div class="inner">
+                        <div class="startAnim">
+                            <p class="headLine"></p>
+                            <div class="wrapper">
+                                <div class="cols">
+                                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="container">
+                                            <div class="front"
+                                                style="background-image: url(https://unsplash.it/500/500/)">
+                                                <div class="innerr">
+                                                    <p>Diligord</p>
+                                                    <span>Lorem ipsum</span>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="innerr">
+                                                    <p>Lorem ipsum, consectetur adipis elit. Alias
+                                                        cum repellat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="container">
+                                            <div class="front"
+                                                style="background-image: url(https://unsplash.it/511/511/)">
+                                                <div class="innerr">
+                                                    <p>Picture</p>
+                                                    <span>Lorem ipsum</span>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="innerr">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipi elit. Alias
+                                                        cum repellat </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="container">
+                                            <div class="front"
+                                                style="background-image: url(https://unsplash.it/502/502/)">
+                                                <div class="innerr">
+                                                    <p>Rocogged</p>
+                                                    <span>Lorem ipsum</span>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="innerr">
+                                                    <p>Lorem ipsum, dolor onsectetur adcing. Alias
+                                                        repellat velit</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="container">
+                                            <div class="front"
+                                                style="background-image: url(https://unsplash.it/503/503/)">
+                                                <div class="innerr">
+                                                    <p>Strizzes</p>
+                                                    <span>Lorem ipsum</span>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="innerr">
+                                                    <p>Lorem ipsum, consectetur adicin. Alias
+                                                        cum repellat velit quae suscipit c.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <ul class=" line02"> -->
+
+
+                                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="container">
+                                            <div class="front"
+                                                style="background-image: url(https://unsplash.it/504/504/)">
+                                                <div class="innerr">
+                                                    <p>Fantasy</p>
+                                                    <span>Lorem ipsum</span>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="innerr">
+                                                    <p> Ipsum, consectetur adipicing elit. Alias
+                                                        cum repellat velit quae suscipit c.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="container">
+                                            <div class="front"
+                                                style="background-image: url(https://unsplash.it/505/505/)">
+                                                <div class="innerr">
+                                                    <p>Reflupper</p>
+                                                    <span>Lorem ipsum</span>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="innerr">
+                                                    <p> Ipsum, adipis elit. Alias
+                                                        cum repellat velit quae suscipit c.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="container">
+                                            <div class="front"
+                                                style="background-image: url(https://unsplash.it/506/506/)">
+                                                <div class="innerr">
+                                                    <p>Acirassi</p>
+                                                    <span>Lorem ipsum</span>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="innerr">
+                                                    <p>Ipsum, consectetur adipisicing elit. Alias
+                                                        cum repellat velit quae suscipit c.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="container">
+                                            <div class="front"
+                                                style="background-image: url(https://unsplash.it/508/508/)">
+                                                <div class="innerr">
+                                                    <p>Sohanidd</p>
+                                                    <span>Lorem ipsum</span>
+                                                </div>
+                                            </div>
+                                            <div class="back">
+                                                <div class="innerr">
+                                                    <p>Lorem ipsum,adipis elit. Alias
+                                                        cum repellat velit quae suscipit c.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="startAnim">
+                            <h2><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.44 85.08">
+                                        <title>New</title>
+                                        <path d="M79.92,0V84H60.36L23.28,39.24V84H0V0H19.56L56.64,44.76V0Z" />
+                                        <path
+                                            d="M161.76,57.24H114.48A13.23,13.23,0,0,0,120.06,65a18.63,18.63,0,0,0,10.38,2.7,22.47,22.47,0,0,0,8.1-1.32,23.9,23.9,0,0,0,6.9-4.32l12,12.48Q148,85.08,129.72,85.08a44.26,44.26,0,0,1-20-4.32,31.81,31.81,0,0,1-18.12-29.4A32.1,32.1,0,0,1,109,22.2a40.95,40.95,0,0,1,36-.3A30.58,30.58,0,0,1,157.5,33.54a34.17,34.17,0,0,1,4.62,18.06Q162.12,51.84,161.76,57.24ZM118.62,37.08a13.55,13.55,0,0,0-4.5,8.16h26.64a13.55,13.55,0,0,0-4.5-8.16,14.47,14.47,0,0,0-17.64,0Z" />
+                                        <path
+                                            d="M280.44,19,257.28,84H235.2L223,48.6,210.24,84H188.16L165,19h21.6l13.32,39.36L213.72,19h19.44L246.6,58.68,260.4,19Z" />
+                                    </svg></span><span><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 652.46 90.12">
+                                        <title>graduates</title>
+                                        <path
+                                            d="M45.61,59.1H60.36v8.67a30.27,30.27,0,0,1-12.79,2.75,24.56,24.56,0,0,1-12.31-3A21.36,21.36,0,0,1,26.89,59a25.27,25.27,0,0,1-3-12.37q0-10.87,6.57-17.39t17.33-6.51q11.84,0,20.32,9.32L83.19,18.4A40.49,40.49,0,0,0,67.65,7.05a53.49,53.49,0,0,0-21-3.95,51.16,51.16,0,0,0-24,5.56A41.3,41.3,0,0,0,6,24.14,42.67,42.67,0,0,0,0,46.61,42.62,42.62,0,0,0,6,69.08,41.36,41.36,0,0,0,22.47,84.56a49.81,49.81,0,0,0,23.67,5.56,65.7,65.7,0,0,0,18.64-2.75,54.36,54.36,0,0,0,16.5-7.89V41.65H45.61Z" />
+                                        <path
+                                            d="M126.09,25.14a34.37,34.37,0,0,1,12.78-2.22V43.44a46.61,46.61,0,0,0-5.16-.36q-7.32,0-11.46,4t-4.14,12.12V89H95.31V24H117v7.8A21.22,21.22,0,0,1,126.09,25.14Z" />
+                                        <path
+                                            d="M200.91,30.3q8.52,7.38,8.52,22.62V89H188.19v-8.4q-4.92,9.48-19.2,9.48a30,30,0,0,1-13.08-2.64,19.39,19.39,0,0,1-8.34-7.14,18.91,18.91,0,0,1-2.82-10.26q0-9.24,7.08-14.34t21.84-5.1h13q-.6-10.32-13.8-10.32a31.66,31.66,0,0,0-9.48,1.5A25.26,25.26,0,0,0,155.19,46l-7.68-15.48a42.54,42.54,0,0,1,13.14-5.58,62.48,62.48,0,0,1,15.54-2Q192.39,22.92,200.91,30.3Zm-18.6,43.5a10.69,10.69,0,0,0,4.32-5.64V62.52h-9.84q-10,0-10,6.6a5.81,5.81,0,0,0,2.28,4.8,9.81,9.81,0,0,0,6.24,1.8A12.63,12.63,0,0,0,182.31,73.8Z" />
+                                        <path
+                                            d="M293,0V89H271.23V82.56q-6.36,7.56-19.08,7.56A32.33,32.33,0,0,1,236,86a29.94,29.94,0,0,1-11.58-11.82,36,36,0,0,1-4.26-17.76,35.67,35.67,0,0,1,4.26-17.7A29.62,29.62,0,0,1,236,27a32.71,32.71,0,0,1,16.2-4.08q11.64,0,18,6.72V0ZM266.67,67.86q3.84-4.14,3.84-11.46t-3.78-11.28A12.72,12.72,0,0,0,257,41a12.91,12.91,0,0,0-9.84,4.08q-3.84,4.08-3.84,11.28t3.84,11.46A12.82,12.82,0,0,0,257,72,12.68,12.68,0,0,0,266.67,67.86Z" />
+                                        <path
+                                            d="M376,24V89H354.27v-7a23.37,23.37,0,0,1-8.64,6,28.19,28.19,0,0,1-10.68,2q-12.6,0-20.1-7.44t-7.5-22.32V24h22.8V56.64q0,7.32,2.76,10.68t8,3.36a11.35,11.35,0,0,0,8.82-3.78q3.42-3.78,3.42-11.58V24Z" />
+                                        <path
+                                            d="M443.07,30.3q8.51,7.38,8.52,22.62V89H430.35v-8.4q-4.94,9.48-19.2,9.48a30,30,0,0,1-13.08-2.64,19.27,19.27,0,0,1-8.34-7.14,18.83,18.83,0,0,1-2.82-10.26q0-9.24,7.08-14.34t21.84-5.1h13q-.62-10.32-13.8-10.32a31.61,31.61,0,0,0-9.48,1.5A25.06,25.06,0,0,0,397.35,46l-7.68-15.48a42.54,42.54,0,0,1,13.14-5.58,62.42,62.42,0,0,1,15.54-2Q434.55,22.92,443.07,30.3Zm-18.6,43.5a10.79,10.79,0,0,0,4.32-5.64V62.52H419c-6.65,0-10,2.2-10,6.6a5.78,5.78,0,0,0,2.28,4.8,9.8,9.8,0,0,0,6.24,1.8A12.65,12.65,0,0,0,424.47,73.8Z" />
+                                        <path
+                                            d="M510.86,86.4a23,23,0,0,1-7,2.76,39,39,0,0,1-8.82,1q-12.72,0-19.56-6.24t-6.84-18.6V43.44h-9.48v-17h9.48V9.48h22.8V26.4H506.3v17H491.42V65a7.66,7.66,0,0,0,1.86,5.46,6.51,6.51,0,0,0,5,2,12.08,12.08,0,0,0,7-2Z" />
+                                        <path
+                                            d="M585.74,62.28H538.46A13.23,13.23,0,0,0,544,70a18.63,18.63,0,0,0,10.38,2.7,22.47,22.47,0,0,0,8.1-1.32,23.9,23.9,0,0,0,6.9-4.32l12,12.48q-9.48,10.56-27.72,10.56a44.26,44.26,0,0,1-20-4.32,31.81,31.81,0,0,1-18.12-29.4,32.1,32.1,0,0,1,17.4-29.16,40.95,40.95,0,0,1,36-.3,30.58,30.58,0,0,1,12.54,11.64,34.17,34.17,0,0,1,4.62,18.06Q586.1,56.88,585.74,62.28ZM542.6,42.12a13.55,13.55,0,0,0-4.5,8.16h26.64a13.55,13.55,0,0,0-4.5-8.16,14.47,14.47,0,0,0-17.64,0Z" />
+                                        <path
+                                            d="M604.22,88.26A42.47,42.47,0,0,1,591.5,83.4l6.84-15.6a38.64,38.64,0,0,0,10.56,4.38A47.21,47.21,0,0,0,621,73.8q5.52,0,7.86-1.14a3.58,3.58,0,0,0,2.34-3.3q0-2.16-2.82-3.06a58.37,58.37,0,0,0-8.94-1.74A88.3,88.3,0,0,1,606.2,62a20.46,20.46,0,0,1-9.42-5.76q-4-4.2-4-11.76a17.77,17.77,0,0,1,3.72-11.1,24.67,24.67,0,0,1,10.86-7.68,46.53,46.53,0,0,1,17.1-2.82,69.12,69.12,0,0,1,14,1.44,40.35,40.35,0,0,1,11.64,4.08l-6.84,15.48a37.92,37.92,0,0,0-18.72-4.8q-5.4,0-7.92,1.26t-2.52,3.3q0,2.28,2.76,3.18a63.29,63.29,0,0,0,9.12,1.86,100.56,100.56,0,0,1,13.32,2.76,20.36,20.36,0,0,1,9.18,5.7q3.9,4.14,3.9,11.58a17.6,17.6,0,0,1-3.72,11q-3.72,4.86-11,7.62a49.21,49.21,0,0,1-17.46,2.76A70.1,70.1,0,0,1,604.22,88.26Z" />
+                                    </svg></span></h2>
+
+                            <div class="btnArea">
+                                <p class="btn"><a href="students/" class="gradation"><span>New Dreams<svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41">
+                                                <circle cx="20.5" cy="20.5" r="20" />
+                                                <polyline points="21.42 15.92 26 20.5 21.42 25.08" />
+                                                <line x1="26" y1="20.5" x2="15" y2="20.5" /></svg></span></a></p>
+                                <div class="box01">
+                                    <p><span>An effort to be made<br>
+                                            In order to have more <br class="pc">Choices in the future</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="secMidCareer" class="startAnim">
+                    <div class="inner">
+                        <p class="headLine"></p>
+                        <p class="lead"><span></span></p>
+                        <div class="btnArea">
+                            <div class="box01">
+                                <p><span>Struggle is a mentality<br>
+                                        As long as it's meaningful<br class="pc">It makes sense to do it later.</span>
+                                </p>
+                            </div>
+                            <p class="btn"><a href="career/" class="gradation"><span style="font-size: 22px;">Deed<svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41">
+                                            <circle cx="20.5" cy="20.5" r="20" />
+                                            <polyline points="21.42 15.92 26 20.5 21.42 25.08" />
+                                            <line x1="26" y1="20.5" x2="15" y2="20.5" /></svg></span></a></p>
+                        </div>
+                        <ul class="bg">
+                            <li><img src="assets/images/top/mid-career_bg01.png" alt="" /></li>
+                            <li><img src="assets/images/top/mid-career_bg02.png" alt="" /></li>
+                            <li><img src="assets/images/top/mid-career_bg03.png" alt="" /></li>
+                            <li><img src="assets/images/top/mid-career_bg04.png" alt="" /></li>
+                            <li><img src="assets/images/top/mid-career_bg05.png" alt="" /></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="secGate" class="startAnim">
+                    <div class="inner">
+                        <p class="headLine"></p>
+                        <p class="lead"><span>USEN-NEXT GROUP</span><span>Brand New Recruiting Program</span></p>
+                        <div class="btnArea">
+                            <p class="btn block-entry-button"><span class="gradation"><span>ENTRY<svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41">
+                                            <circle cx="20.5" cy="20.5" r="20" />
+                                            <polyline points="21.42 15.92 26 20.5 21.42 25.08" />
+                                            <line x1="26" y1="20.5" x2="15" y2="20.5" /></svg></span></span></p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="entry-gate-block">
+                <div class="gate-upper"></div>
+                <div class="gate-center"></div>
+                <div class="gate-bottom"></div>
+            </div>
+
+        </main>
+
+        <footer class="startAnim">
+            <div class="inner">
+                <div class="secLeft">
+                    <p class="lead"><span>BCY&Alen GROUP</span><span>Brand New Recruiting Program</span></p>
+                </div>
+                <div class="secRight">
+                    <ul>
+                        <li><a href="/"><span><span>T</span><span>O</span><span>P</span></span></a></li>
+                        <li><a href="/about/"><span><span>W</span><span>h</span><span>a</span><span>t</span><span>'</span><span>s</span>
+                                    <span>t</span><span>h</span><span>e</span>
+                                    <span>W</span><span>I</span><span>L</span><span>L</span><span>P</span><span>O</span><span>W</span><span>E</span><span>R</span></span></a>
+                        </li>
+                        <li><a
+                                href="/group/"><span><span>G</span><span>r</span><span>o</span><span>u</span><span>p</span></span></a>
+                        </li>
+                        <li><a href="/dream/"><span><span>N</span><span>e</span><span>w</span>
+                                    <span>D</span><span>r</span><span>e</span><span>a</span><span>m</span><span>e</span></span></a>
+                        </li>
+                        <li><a href="/deed/"><span><span>D</span><span>e</span><span>e</span><span>d</span></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+
+</html>

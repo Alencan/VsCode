@@ -1,0 +1,1876 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap);article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
+{
+    display: block
+}
+
+audio,canvas,video
+{
+    display: inline-block
+}
+
+html.no-cssanimations audio,html.no-cssanimations canvas,html.no-cssanimations video
+{
+    display: inline;
+    zoom: 1
+}
+
+audio:not([controls])
+{
+    display: none
+}
+
+html
+{
+    overflow-y: scroll;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+a:hover,a:active
+{
+    outline: 0
+}
+
+pre,code,kbd,samp
+{
+    font-family: monospace, serif
+}
+
+pre
+{
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+q
+{
+    quotes: none
+}
+
+q:before,q:after
+{
+    content: '';
+    content: none
+}
+
+sub,sup
+{
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sup
+{
+    top: -0.5em
+}
+
+sub
+{
+    bottom: -0.25em
+}
+
+nav ul,nav ol
+{
+    list-style: none;
+    list-style-image: none
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: bottom;
+    -webkit-backface-visibility: hidden
+}
+
+svg:not(:root)
+{
+    overflow: hidden
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 100%;
+    font-family: inherit
+}
+
+caption,th,td
+{
+    text-align: left
+}
+
+button,input,select,textarea
+{
+    margin: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    vertical-align: middle;
+    outline: none
+}
+
+button,input
+{
+    line-height: normal
+}
+
+html.no-postmessage button,html.no-postmessage input
+{
+    overflow: visible
+}
+
+textarea,input[type="text"],input[type="password"],input[type="tel"]
+{
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner
+{
+    padding: 0;
+    border: 0
+}
+
+button,input[type="button"],input[type="reset"],input[type="submit"]
+{
+    cursor: pointer;
+    -webkit-appearance: button
+}
+
+input[type="search"]
+{
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button
+{
+    -webkit-appearance: none
+}
+
+button
+{
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    line-height: 0
+}
+
+textarea
+{
+    overflow: auto;
+    vertical-align: top
+}
+
+::-webkit-input-placeholder
+{
+    color: #999;
+    opacity: 1
+}
+
+*::-moz-placeholder
+{
+    color: #999;
+    opacity: 1
+}
+
+:placeholder-shown
+{
+    color: #999;
+    opacity: 1
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,object,iframe,pre,code,p,blockquote,form,fieldset,legend,table,th,td,caption,tbody,tfoot,thead
+{
+    margin: 0;
+    padding: 0
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.2
+}
+
+ul
+{
+    list-style: none;
+    list-style-image: none
+}
+
+em
+{
+    font-style: normal
+}
+
+small
+{
+    font-size: 100%
+}
+
+label
+{
+    cursor: pointer
+}
+
+textarea
+{
+    overflow: auto
+}
+
+legend
+{
+    display: none
+}
+
+fieldset
+{
+    border: none
+}
+
+input,textarea,select,label
+{
+    font-family: inherit;
+    outline: none
+}
+
+object
+{
+    vertical-align: middle;
+    outline: none
+}
+
+abbr,acronym
+{
+    border: none;
+    font-variant: normal
+}
+
+address,caption,cite,code,dfn,var
+{
+    font-weight: normal;
+    font-style: normal
+}
+
+hr
+{
+    display: none
+}
+
+html.no-postmessage body,html.no-postmessage br
+{
+    letter-spacing: 0
+}
+
+html.no-postmessage div
+{
+    zoom: 1
+}
+
+*
+{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
+}
+
+body
+{
+    color: #333;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-text-size-adjust: none
+}
+
+input,textarea,select,button
+{
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif
+}
+
+input::placeholder
+{
+    color: #ccc
+}
+
+input:-ms-input-placeholder
+{
+    color: #ccc
+}
+
+input::-ms-input-placeholder
+{
+    color: #ccc
+}
+
+a
+{
+    color: #00a2a4;
+    text-decoration: underline;
+    transition: 0.2s
+}
+
+a,button
+{
+    transition: 0.2s opacity
+}
+
+a:visited,button:visited
+{
+    color: #00a2a4
+}
+
+.pc
+{
+    display: block
+}
+
+.sp
+{
+    display: none
+}
+
+body
+{
+    min-width: 1263px
+}
+
+#wrap
+{
+    overflow: hidden
+}
+
+@media screen and (max-width: 767px)
+{
+    body
+    {
+        font-weight: normal;
+        overflow-x: hidden;
+        min-width: inherit
+    }
+
+    input,textarea,select
+    {
+        font-weight: normal
+    }
+
+    .pc
+    {
+        display: none !important
+    }
+
+    .sp
+    {
+        display: block
+    }
+
+    img
+    {
+        width: 100%
+    }
+}
+
+.en
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800
+}
+
+.bgMain
+{
+    background: url("../images/common/bg_main.png") center -96px
+}
+
+#progress
+{
+    height: 6px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0, 1)
+}
+
+.gradation
+{
+    color: #fff !important;
+    background: linear-gradient(90deg, rgba(1,144,210,0.95), rgba(131,71,179,0.95), rgba(254,1,150,0.95), rgba(131,71,179,0.95), rgba(1,144,210,0.95));
+    background-size: 300% 300%;
+    animation: bgGradation 30s linear infinite
+}
+
+.gradation02
+{
+    color: #fff;
+    background: linear-gradient(90deg, rgba(140,239,1,0.95), rgba(198,119,76,0.95), rgba(253,4,148,0.95), rgba(198,119,76,0.95), rgba(140,239,1,0.95));
+    background-size: 300% 300%;
+    animation: bgGradation 30s linear infinite
+}
+
+@keyframes bgGradation
+{
+    0%
+    {
+        /* 第一个值是水平位置，第二个值是垂直 */
+        background-position: 0% 0%
+    }
+
+    50%
+    {
+        background-position: -150% 50%
+    }
+
+    100%
+    {
+        background-position: -300% 50%
+    }
+}
+
+.inner
+{
+    position: relative;
+    width: 984px;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 767px)
+{
+    .bgMain
+    {
+        background: url("../images/common/bg_main_sp.png") center -20vw;
+        background-size: 100% auto
+    }
+
+    #progress
+    {
+        height: 3px
+    }
+
+    .inner
+    {
+        width: 94.4vw
+    }
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200
+}
+
+header .block-entry-button
+{
+    position: absolute;
+    top: 40px;
+    right: 40px
+}
+
+header .block-entry-button span
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    display: block;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 2
+}
+
+header .block-entry-button:after
+{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    transition: all 0.2s;
+    z-index: 1
+}
+
+header .block-entry-button:hover:after
+{
+    width: 100%
+}
+
+header #logo
+{
+    position: absolute;
+    left: 40px;
+    top: 46px;
+    width: 52px;
+    z-index: 100
+}
+
+header #logo svg
+{
+    height: 71.8px
+}
+
+header #logo.change svg path,header #logo.change svg polygon,header #logo.change svg rect
+{
+    fill: #000
+}
+
+header #logo.changeWhite svg path,header #logo.changeWhite svg polygon,header #logo.changeWhite svg rect
+{
+    fill: #fff
+}
+
+header #btnNav
+{
+    position: absolute;
+    top: 129px;
+    left: 40px;
+    width: 52px;
+    height: 35px;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 100
+}
+
+header #btnNav span
+{
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0, 1),transform 0.3s cubic-bezier(0.4, 0, 0, 1),left 0.3s cubic-bezier(0.4, 0, 0, 1),top 0.3s cubic-bezier(0.4, 0, 0, 1)
+}
+
+header #btnNav span.line01
+{
+    width: 36px;
+    left: 8px;
+    top: 8px
+}
+
+header #btnNav span.line02
+{
+    width: 26px;
+    left: 8px;
+    top: 17px
+}
+
+header #btnNav span.line03
+{
+    width: 16px;
+    left: 8px;
+    top: 26px
+}
+
+header #btnNav:hover span
+{
+    width: 36px
+}
+
+header #btnNav.change span
+{
+    background-color: #000
+}
+
+header #btnNav.changeWhite span
+{
+    background-color: #fff
+}
+
+header .fixedGate
+{
+    position: fixed;
+    left: 49px;
+    bottom: 70px;
+    line-height: 0.9;
+    width: 98px;
+    color: #000;
+    transition: color ease 0.3s
+}
+
+header .fixedGate span
+{
+    display: inline-block
+}
+
+header .fixedGate span:nth-child(1)
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    white-space: nowrap;
+    line-height: 1.2;
+    letter-spacing: -0.02em
+}
+
+header .fixedGate span:nth-child(2)
+{
+    transition: border-top ease 0.3s;
+    border-top: 1px solid #000;
+    margin-top: 14px;
+    padding-top: 15px
+}
+
+header .fixedGate span:nth-child(2) svg
+{
+    width: 98px;
+    height: 28px
+}
+
+header .fixedGate.change
+{
+    color: #000
+}
+
+header .fixedGate.change span:nth-child(2)
+{
+    border-top: 1px solid #000
+}
+
+header .fixedGate.change svg path,header .fixedGate.change svg polygon,header .fixedGate.change svg rect
+{
+    fill: #000
+}
+
+header .fixedGate.changeWhite
+{
+    color: #fff
+}
+
+header .fixedGate.changeWhite span:nth-child(2)
+{
+    border-top: 1px solid #fff
+}
+
+header .fixedGate.changeWhite svg path,header .fixedGate.changeWhite svg polygon,header .fixedGate.changeWhite svg rect
+{
+    fill: #fff
+}
+
+header svg path,header svg polygon
+{
+    fill: #000;
+    transition: fill ease 0.3s
+}
+
+header #gNav
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 310px;
+    z-index: 50;
+    transform: scaleY(0);
+    transform-origin: center top
+}
+
+header #gNav .inner
+{
+    width: 984px;
+    padding: 46px 0 193px 164px
+}
+
+header #gNav .inner:before
+{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left center;
+    margin-bottom: 30px
+}
+
+header #gNav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 121px
+}
+
+header #gNav ul li
+{
+    width: 299px
+}
+
+header #gNav ul li a
+{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 17.73px;
+    line-height: 39px;
+    overflow: hidden
+}
+
+header #gNav ul li a:before
+{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(255,255,255,0.4);
+    transform: scaleX(0);
+    transform-origin: left center
+}
+
+header #gNav ul li a>span
+{
+    display: block;
+    transform: translateY(-100%)
+}
+
+header #gNav.show
+{
+    transform: scaleY(1);
+    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+header #gNav.show .inner:before
+{
+    transform: scaleX(1);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s
+}
+
+header #gNav.show ul li a>span
+{
+    transform: translateY(0);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+}
+
+header #gNav.show ul li:nth-child(1) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.15s
+}
+
+header #gNav.show ul li:nth-child(2) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s
+}
+
+header #gNav.show ul li:nth-child(3) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s
+}
+
+header #gNav.show ul li:nth-child(4) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s
+}
+
+header #gNav.show ul li:nth-child(5) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.35s
+}
+
+header.open
+{
+    height: auto
+}
+
+header.open #logo svg path,header.open #logo svg polygon,header.open #logo svg rect
+{
+    fill: #fff !important
+}
+
+header.open #btnNav span
+{
+    background-color: #fff !important
+}
+
+header.open #btnNav span.line01
+{
+    width: 20px;
+    transform: rotate(45deg) translate(6px, 6px);
+    transform-origin: left center
+}
+
+header.open #btnNav span.line02
+{
+    width: 36px
+}
+
+header.open #btnNav span.line03
+{
+    width: 20px;
+    transform: rotate(-45deg) translate(6px, -6px);
+    transform-origin: left center
+}
+
+header.close #logo svg path,header.close #logo svg polygon,header.close #logo svg rect
+{
+    fill: #fff !important
+}
+
+header.close #btnNav span
+{
+    background-color: #fff !important
+}
+
+header.close #gNav.show
+{
+    transform: scaleY(0);
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s
+}
+
+header.close #gNav.show .inner:before
+{
+    transform: scaleX(0);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+header.close #gNav.show .inner>.sp
+{
+    transform: translateY(-100%);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+header.close #gNav.show ul li a:before
+{
+    transform: scaleX(0);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+header.close #gNav.show ul li a>span
+{
+    transform: translateY(-100%);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+@media screen and (max-width: 1280px)
+{
+    header .block-entry-button
+    {
+        top: 40px;
+        right: 40px
+    }
+
+    header #logo
+    {
+        left: 40px;
+        top: 46px
+    }
+
+    header .block-entry-button
+    {
+        right: 20px
+    }
+
+    header .block-entry-button span
+    {
+        width: 98px
+    }
+
+    header .fixedGate
+    {
+        left: 20px
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    header
+    {
+        height: 14.1333vw
+    }
+
+    header .block-entry-button
+    {
+        top: 3.4666vw;
+        right: 2.8vw
+    }
+
+    header .block-entry-button span
+    {
+        font-size: 2.1333vw;
+        width: 22.4vw;
+        height: 8vw;
+        line-height: 8vw
+    }
+
+    header #logo
+    {
+        left: 2.8vw;
+        top: 3.4666vw;
+        width: 9.8666vw
+    }
+
+    header #logo svg
+    {
+        width: 9.8666vw;
+        height: 13.4666vw;
+        transition: width .3s ease, height .3s ease
+    }
+
+    header #logo.changeWhite svg path,header #logo.changeWhite svg polygon,header #logo.changeWhite svg rect
+    {
+        fill: #000
+    }
+
+    header #btnNav
+    {
+        top: 6vw;
+        left: 16.2666vw;
+        width: 10.6666vw;
+        height: 10.6666vw;
+        padding: 0;
+        transition: top .3s ease
+    }
+
+    header #btnNav span
+    {
+        height: 0.2666vw;
+        min-height: 1px
+    }
+
+    header #btnNav span.line01
+    {
+        width: 8.6666vw;
+        left: 0.9333vw;
+        top: 3.2vw
+    }
+
+    header #btnNav span.line02
+    {
+        width: 6.2666vw;
+        left: 0.9333vw;
+        top: 5.2vw
+    }
+
+    header #btnNav span.line03
+    {
+        width: 3.8666vw;
+        left: 0.9333vw;
+        top: 7.2vw
+    }
+
+    header #btnNav:hover span.line01
+    {
+        width: 8.6666vw
+    }
+
+    header #btnNav:hover span.line02
+    {
+        width: 6.2666vw
+    }
+
+    header #btnNav:hover span.line03
+    {
+        width: 3.8666vw
+    }
+
+    header #btnNav.changeWhite span
+    {
+        background-color: #000
+    }
+
+    header .fixedGate
+    {
+        display: none
+    }
+
+    header #gNav
+    {
+        width: 100%;
+        height: 100vh;
+        transform: scaleY(0);
+        transform-origin: center top;
+        padding-top: 20.8vw
+    }
+
+    header #gNav .inner
+    {
+        width: 80vw;
+        padding: 0;
+        overflow: hidden
+    }
+
+    header #gNav .inner:before
+    {
+        margin-bottom: 0
+    }
+
+    header #gNav .inner>.sp
+    {
+        padding-top: 2vw;
+        margin-bottom: 7vw;
+        transform: translateY(-100%)
+    }
+
+    header #gNav .inner>.sp .lead
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 1.7333vw;
+        overflow: hidden;
+        line-height: 1.2;
+        color: #fff;
+        margin-bottom: 3.0666vw
+    }
+
+    header #gNav .inner>.sp .hdLogo svg
+    {
+        width: 44.4vw;
+        height: 12.1333vw
+    }
+
+    header #gNav .inner>.sp .hdLogo svg path,header #gNav .inner>.sp .hdLogo svg polygon,header #gNav .inner>.sp .hdLogo svg rect
+    {
+        fill: #fff
+    }
+
+    header #gNav ul
+    {
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto
+    }
+
+    header #gNav ul li
+    {
+        width: auto
+    }
+
+    header #gNav ul li a
+    {
+        font-size: 4.5333vw;
+        line-height: 11.7333vw
+    }
+
+    header #gNav.show
+    {
+        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+    }
+
+    header #gNav.show .inner>.sp
+    {
+        transform: translateY(0);
+        transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+    }
+
+    header #gNav.show .inner>.sp .lead span
+    {
+        transform: translateY(0%);
+        transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+    }
+
+    header #gNav.show .inner>.sp .hdLogo span
+    {
+        transform: translateY(0%);
+        transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+    }
+
+    header.open #btnNav
+    {
+        top: 6vw !important;
+        left: 76.5333vw
+    }
+
+    header.open #btnNav span.line01
+    {
+        width: 4.8vw;
+        transform: rotate(45deg) translate(1.1vw, 1.6vw);
+        transform-origin: left center
+    }
+
+    header.open #btnNav span.line02
+    {
+        width: 8.9333vw
+    }
+
+    header.open #btnNav span.line03
+    {
+        width: 4.8vw;
+        transform: rotate(-45deg) translate(1.1vw, -1.6vw);
+        transform-origin: left center
+    }
+
+    header.open #logo svg
+    {
+        width: 9.8666vw !important;
+        height: 13.4666vw !important
+    }
+
+    header.forSp
+    {
+        background-color: rgba(255,255,255,0.9)
+    }
+
+    header.forSp #logo svg
+    {
+        width: 5.8666vw;
+        height: 8vw
+    }
+
+    header.forSp #btnNav
+    {
+        top: 2vw
+    }
+}
+
+#secGate
+{
+    padding-bottom: 119px
+}
+
+#secGate .headLine
+{
+    height: 1px;
+    margin-bottom: 77px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left top
+}
+
+#secGate .show .headLine
+{
+    transform: scaleX(1);
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+#secGate .lead
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 14.5px;
+    overflow: hidden;
+    line-height: 1.2;
+    margin-bottom: 20px
+}
+
+#secGate .lead span
+{
+    display: block;
+    transform: translateX(-100%)
+}
+
+#secGate h2
+{
+    margin-bottom: 61px
+}
+
+#secGate h2 svg
+{
+    width: 664px;
+    height: 181px
+}
+
+#secGate h2 svg rect,#secGate h2 svg path,#secGate h2 svg polygon
+{
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    stroke-width: .5;
+    stroke: #000;
+    stroke-dashoffset: 2000;
+    fill: transparent
+}
+
+#secGate .btnArea
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end
+}
+
+#secGate .btnArea .btn
+{
+    position: relative;
+    overflow: hidden
+}
+
+#secGate .btnArea .btn>span
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    transform: translateY(100%);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    cursor: pointer
+}
+
+#secGate .btnArea .btn>span>span
+{
+    display: block;
+    width: 492px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 30px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2
+}
+
+#secGate .btnArea .btn>span svg
+{
+    position: absolute;
+    top: 53px;
+    right: 30px;
+    width: 41px;
+    height: 41px;
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10
+}
+
+#secGate .btnArea .btn>span:after
+{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    transition: all 0.3s;
+    z-index: 1
+}
+
+#secGate .btnArea .btn>span:hover:after
+{
+    width: 100%
+}
+
+#secGate.show .headLine
+{
+    transform: scaleX(1);
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+#secGate.show .lead span
+{
+    transform: translateX(0);
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0, 1) 0s
+}
+
+#secGate.show .lead span:nth-child(2)
+{
+    transition-delay: 0.1s
+}
+
+#secGate.show h2 svg .st2
+{
+    animation: secGateSvgAnim 2.3s ease-in 0.17s forwards
+}
+
+#secGate.show .btnArea .btn>span
+{
+    transform: none;
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0, 1) 0.6s
+}
+
+@media screen and (max-width: 767px)
+{
+    #secGate
+    {
+        padding-bottom: 16.1333vw
+    }
+
+    #secGate .headLine
+    {
+        margin-bottom: 13.3333vw
+    }
+
+    #secGate .lead
+    {
+        font-size: 2.4vw;
+        margin-bottom: 3.2vw
+    }
+
+    #secGate h2
+    {
+        margin-bottom: 9.2vw
+    }
+
+    #secGate h2 svg
+    {
+        width: 63.0666vw;
+        height: 17.2vw
+    }
+
+    #secGate .btnArea
+    {
+        width: auto;
+        margin: 0 auto;
+        display: block
+    }
+
+    #secGate .btnArea .box01
+    {
+        background-color: transparent;
+        color: #000;
+        display: block;
+        transform: scaleX(1);
+        min-height: inherit
+    }
+
+    #secGate .btnArea .box01 p span
+    {
+        font-size: 2.8vw;
+        line-height: 1.5
+    }
+
+    #secGate .btnArea .btn>a>span,#secGate .btnArea .btn>span>span
+    {
+        width: auto;
+        height: 17.3333vw;
+        line-height: 17.3333vw;
+        padding: 0 4.2666vw;
+        font-size: 2.9333vw
+    }
+
+    #secGate .btnArea .btn>a svg,#secGate .btnArea .btn>span svg
+    {
+        top: 4.9333vw;
+        right: 3.7333vw;
+        width: 7.0666vw;
+        height: 7.0666vw
+    }
+
+    #secGate .btnArea .btn>a:after,#secGate .btnArea .btn>span:after
+    {
+        display: none
+    }
+}
+
+@keyframes secGateSvgAnim
+{
+    0%
+    {
+        stroke-dashoffset: 2000;
+        fill: transparent
+    }
+
+    50%
+    {
+        fill: transparent
+    }
+
+    100%
+    {
+        stroke-dashoffset: 0;
+        fill: #000
+    }
+}
+
+.ie #secGate h2
+{
+    overflow: hidden
+}
+
+.ie #secGate h2 svg
+{
+    transform: translateY(110%)
+}
+
+.ie #secGate h2 svg rect,.ie #secGate h2 svg path,.ie #secGate h2 svg polygon
+{
+    fill: #000
+}
+
+.ie #secGate.show h2 svg
+{
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s
+}
+
+footer
+{
+    position: relative;
+    background: #000
+}
+
+footer #btnPagetop
+{
+    position: absolute;
+    right: 49px;
+    bottom: 51px;
+    z-index: 2
+}
+
+footer #btnPagetop svg
+{
+    width: 41px;
+    height: 41px
+}
+
+footer #btnPagetop svg circle,footer #btnPagetop svg polyline
+{
+    transition: all 0.3s;
+    fill: rgba(255,255,255,0);
+    stroke: #fff;
+    stroke-miterlimit: 10
+}
+
+footer #btnPagetop a
+{
+    display: block
+}
+
+footer #btnPagetop a:hover svg circle
+{
+    fill: rgba(255,255,255,0.8)
+}
+
+footer .inner
+{
+    display: flex;
+    justify-content: space-between;
+    height: 654px;
+    background: url("../images/common/ft_bg.png") 0 0 no-repeat
+}
+
+footer .secLeft
+{
+    padding-top: 76px
+}
+
+footer .secLeft .lead
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    overflow: hidden;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 18px
+}
+
+footer .secLeft .lead span
+{
+    display: block;
+    transform: translateX(-100%)
+}
+
+footer .secLeft #ftLogo svg
+{
+    width: 333px;
+    height: 90.83px
+}
+
+footer .secLeft #ftLogo svg path,footer .secLeft #ftLogo svg polygon,footer .secLeft #ftLogo svg rect
+{
+    fill: #fff
+}
+
+footer .secLeft #ftLogo span
+{
+    display: block;
+    transform: translateX(-100%)
+}
+
+footer .secRight
+{
+    width: 328px;
+    padding-top: 67px
+}
+
+footer .secRight ul
+{
+    margin-bottom: 31px
+}
+
+footer .secRight ul li a
+{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 44px;
+    overflow: hidden
+}
+
+footer .secRight ul li a:before
+{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #4d4d4d;
+    transform: scaleX(0);
+    transform-origin: left center
+}
+
+footer .secRight ul li a>span
+{
+    display: block;
+    transform: translateY(-100%)
+}
+
+footer .secRight #copyright
+{
+    color: #fff;
+    font-size: 10px;
+    transform-origin: left center;
+    transform: scale(0.9);
+    overflow: hidden
+}
+
+footer .secRight #copyright small
+{
+    display: block;
+    transform: translateY(100%)
+}
+
+footer.show .secLeft .lead span
+{
+    transform: translateX(0);
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s
+}
+
+footer.show .secLeft .lead span:nth-child(2)
+{
+    transition-delay: 0.1s
+}
+
+footer.show .secLeft #ftLogo span
+{
+    transform: translateX(0);
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s
+}
+
+footer.show .secRight ul li a>span
+{
+    transform: translateY(0);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.85s
+}
+
+footer.show .secRight ul li:nth-child(1) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.35s
+}
+
+footer.show .secRight ul li:nth-child(2) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s
+}
+
+footer.show .secRight ul li:nth-child(3) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.45s
+}
+
+footer.show .secRight ul li:nth-child(4) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+}
+
+footer.show .secRight ul li:nth-child(5) a:before
+{
+    transform: scaleX(1);
+    transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.55s
+}
+
+footer.show .secRight #copyright small
+{
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.85s
+}
+
+header #gNav a,footer .secRight a
+{
+    transition: .3s
+}
+
+header #gNav a>span>span,footer .secRight a>span>span
+{
+    display: inline-block
+}
+
+header #gNav a:hover>span>span,footer .secRight a:hover>span>span
+{
+    transform: rotateY(360deg);
+    transition: .6s
+}
+
+header #gNav a:hover>span>span:nth-child(2),footer .secRight a:hover>span>span:nth-child(2)
+{
+    transition-delay: .02s
+}
+
+header #gNav a:hover>span>span:nth-child(3),footer .secRight a:hover>span>span:nth-child(3)
+{
+    transition-delay: .04s
+}
+
+header #gNav a:hover>span>span:nth-child(4),footer .secRight a:hover>span>span:nth-child(4)
+{
+    transition-delay: .06s
+}
+
+header #gNav a:hover>span>span:nth-child(5),footer .secRight a:hover>span>span:nth-child(5)
+{
+    transition-delay: .08s
+}
+
+header #gNav a:hover>span>span:nth-child(6),footer .secRight a:hover>span>span:nth-child(6)
+{
+    transition-delay: .1s
+}
+
+header #gNav a:hover>span>span:nth-child(7),footer .secRight a:hover>span>span:nth-child(7)
+{
+    transition-delay: .12s
+}
+
+header #gNav a:hover>span>span:nth-child(8),footer .secRight a:hover>span>span:nth-child(8)
+{
+    transition-delay: .14s
+}
+
+header #gNav a:hover>span>span:nth-child(9),footer .secRight a:hover>span>span:nth-child(9)
+{
+    transition-delay: .16s
+}
+
+header #gNav a:hover>span>span:nth-child(10),footer .secRight a:hover>span>span:nth-child(10)
+{
+    transition-delay: .18s
+}
+
+header #gNav a:hover>span>span:nth-child(11),footer .secRight a:hover>span>span:nth-child(11)
+{
+    transition-delay: .2s
+}
+
+header #gNav a:hover>span>span:nth-child(12),footer .secRight a:hover>span>span:nth-child(12)
+{
+    transition-delay: .22s
+}
+
+header #gNav a:hover>span>span:nth-child(13),footer .secRight a:hover>span>span:nth-child(13)
+{
+    transition-delay: .24s
+}
+
+header #gNav a:hover>span>span:nth-child(14),footer .secRight a:hover>span>span:nth-child(14)
+{
+    transition-delay: .26s
+}
+
+header #gNav a:hover>span>span:nth-child(15),footer .secRight a:hover>span>span:nth-child(15)
+{
+    transition-delay: .28s
+}
+
+header #gNav a:hover>span>span:nth-child(16),footer .secRight a:hover>span>span:nth-child(16)
+{
+    transition-delay: .3s
+}
+
+@media screen and (max-width: 767px)
+{
+    footer #btnPagetop
+    {
+        right: 3.8666vw;
+        bottom: 15.4666vw
+    }
+
+    footer #btnPagetop svg
+    {
+        width: 7.0666vw;
+        height: 7.0666vw
+    }
+
+    footer #btnPagetop a:hover svg circle
+    {
+        fill: rgba(255,255,255,0)
+    }
+
+    footer .inner
+    {
+        height: 84vw;
+        background: url("../images/common/ft_bg.png") right 0 no-repeat;
+        background-size: 62.9333vw auto
+    }
+
+    footer .secLeft
+    {
+        width: 31.4666vw;
+        padding-top: 10.5333vw
+    }
+
+    footer .secLeft .lead
+    {
+        font-size: 1.3333vw;
+        margin-bottom: 2.5333vw
+    }
+
+    footer .secLeft #ftLogo svg
+    {
+        width: 24.6666vw;
+        height: 6.6666vw
+    }
+
+    footer .secRight
+    {
+        flex: 1;
+        width: auto;
+        padding-top: 10.5333vw
+    }
+
+    footer .secRight ul
+    {
+        margin-bottom: 10vw
+    }
+
+    footer .secRight ul li a
+    {
+        font-size: 3.4666vw;
+        line-height: 8.1333vw
+    }
+
+    footer .secRight #copyright
+    {
+        font-size: 1.7vw;
+        transform: scale(1)
+    }
+}
+
+.entry-gate-block
+{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale3d(0.25, 0.25, 0.25);
+    transition: transform 2.45s cubic-bezier(0.19, 1, 0.22, 1) 0.65s;
+    z-index: 1000
+}
+
+.entry-gate-block .gate-form
+{
+    opacity: 0.0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: opacity 1s linear 1.25s
+}
+
+.entry-gate-block .gate-form.hide
+{
+    display: none
+}
+
+.entry-gate-block .gate-upper:before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50vw 0;
+    border-color: white transparent transparent;
+    transition: border-top-width 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0.65s
+}
+
+.entry-gate-block .gate-center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    transition: width 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0.65s,height 0.45s cubic-bezier(0.19, 1, 0.22, 1) 0s
+}
+
+.entry-gate-block .gate-bottom:before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50vw 0;
+    border-color: transparent transparent white;
+    transition: border-bottom-width 2.25s cubic-bezier(0.19, 1, 0.22, 1) 0.65s
+}
+
+.entry-gate-block.show
+{
+    display: block
+}
+
+.entry-gate-block.start
+{
+    transform: scale3d(1, 1, 1)
+}
+
+.entry-gate-block.start .gate-form
+{
+    opacity: 0.85
+}
+
+.entry-gate-block.start .gate-upper:before
+{
+    border-top-width: 75vh
+}
+
+.entry-gate-block.start .gate-center
+{
+    width: 100%;
+    height: 100%
+}
+
+.entry-gate-block.start .gate-bottom:before
+{
+    border-bottom-width: 75vh
+}
+
+@media screen and (max-width: 767px)
+{
+    .entry-gate-block .gate-form
+    {
+        background-size: auto 100%;
+        -webkit-transition: opacity 1.25s linear 1s;
+        transition: opacity 1.25s linear 1s
+    }
+}

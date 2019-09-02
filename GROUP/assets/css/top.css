@@ -1,0 +1,3099 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,500,800);
+body.mainContentsHidden
+{
+    height: 100vh;
+    overflow: hidden
+}
+
+body.mainContentsShow
+{
+    height: auto;
+    overflow: auto
+}
+
+body.mainContentsShow #secIntro
+{
+    min-height: 100vh
+}
+
+header #btnNav span
+{
+    background-color: #fff
+}
+
+header .fixedGate
+{
+    color: #fff
+}
+
+header .fixedGate span:nth-child(2)
+{
+    border-top: 1px solid #fff
+}
+
+header #logo,header #btnNav,header .block-entry-button
+{
+    transform: translateY(-200px)
+}
+
+header .fixedGate
+{
+    transform: translateX(-200px)
+}
+
+header.show #logo,header.show #btnNav,header.show .block-entry-button,header.show .fixedGate
+{
+    transform: none;
+    transition: transform 1.15s cubic-bezier(1, 0, 0, 1) 0s
+}
+
+header svg path,header svg polygon
+{
+    fill: #fff;
+    transition: fill ease 0.3s
+}
+
+.inner
+{
+    overflow: hidden
+}
+
+h2
+{
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800
+}
+
+.headLine
+{
+    height: 1px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left top
+}
+
+.btnArea
+{
+    width: 984px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start
+}
+
+.btnArea .box01
+{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 200px
+}
+
+.btnArea .box01 p
+{
+    overflow: hidden
+}
+
+.btnArea .box01 p span
+{
+    display: block;
+    transform: translateY(100%);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.9
+}
+
+.btnArea .btn
+{
+    position: relative;
+    overflow: hidden
+}
+
+.btnArea .btn>a,.btnArea .btn>span
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    transform: translateY(100%);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    cursor: pointer
+}
+
+.btnArea .btn>a>span,.btnArea .btn>span>span
+{
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2
+}
+
+.btnArea .btn>a svg,.btnArea .btn>span svg
+{
+    position: absolute;
+    top: 29px;
+    right: 30px;
+    width: 41px;
+    height: 41px;
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10
+}
+
+.btnArea .btn>a:after,.btnArea .btn>span:after
+{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    transition: all 0.3s;
+    z-index: 1
+}
+
+.btnArea .btn>a:hover:after,.btnArea .btn>span:hover:after
+{
+    width: 100%
+}
+
+@media screen and (max-width: 767px)
+{
+    .btnArea
+    {
+        width: auto;
+        margin: 0 auto;
+        display: block
+    }
+
+    .btnArea .box01
+    {
+        background-color: transparent;
+        color: #000;
+        display: block;
+        transform: scaleX(1);
+        height: inherit
+    }
+
+    .btnArea .box01 p span
+    {
+        font-size: 2.8vw;
+        line-height: 1.5
+    }
+
+    .btnArea .btn>a,.btnArea .btn>span
+    {
+        font-size: 2.9333vw
+    }
+
+    .btnArea .btn>a>span,.btnArea .btn>span>span
+    {
+        width: auto;
+        height: 17.3333vw;
+        line-height: 17.3333vw;
+        padding: 0 4.2666vw
+    }
+
+    .btnArea .btn>a svg,.btnArea .btn>span svg
+    {
+        top: 4.9333vw;
+        right: 3.7333vw;
+        width: 7.0666vw;
+        height: 7.0666vw
+    }
+
+    .btnArea .btn>a:after,.btnArea .btn>span:after
+    {
+        display: none
+    }
+}
+
+.show .headLine
+{
+    transform: scaleX(1);
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+.show .box01
+{
+    transform: scaleX(1)
+}
+
+.show .box01 p span
+{
+    transform: translateY(0)
+}
+
+.show .btn>a,.show .btn>span
+{
+    transform: none
+}
+
+.block-movie
+{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #000
+}
+
+.block-movie iframe
+{
+    position: absolute;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto
+}
+
+.block-movie:before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.8)
+}
+
+.block-movie .bg-pan
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden
+}
+
+.block-movie .bg-pan .pan-image
+{
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../images/top/img_pan_bg.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: auto 100%
+}
+
+.block-movie .bg-pan .pan-image.selected
+{
+    -webkit-transition: transform 12s linear 0s, opacity 0.95s linear 11s;
+    -moz-transition: transform 12s linear 0s, opacity 0.95s linear 11s;
+    -ms-transition: transform 12s linear 0s, opacity 0.95s linear 11s;
+    -o-transition: transform 12s linear 0s, opacity 0.95s linear 11s;
+    transition: transform 12s linear 0s, opacity 0.95s linear 11s;
+    transform: translateY(50%);
+    opacity: 0.0
+}
+
+#secIntro
+{
+    height: 100vh;
+    position: relative;
+    overflow: hidden
+}
+
+#secIntro .pc
+{
+    display: block !important
+}
+
+#secIntro .pci
+{
+    display: inline !important
+}
+
+#secIntro .sp
+{
+    display: none !important
+}
+
+#secIntro .spi
+{
+    display: none !important
+}
+
+#secIntro .md
+{
+    display: block !important
+}
+
+#secIntro .mdi
+{
+    display: inline !important
+}
+
+#secIntro .lmd
+{
+    display: none !important
+}
+
+#secIntro .lmdi
+{
+    display: none !important
+}
+
+#secIntro .lpc
+{
+    display: block !important
+}
+
+#secIntro .lpci
+{
+    display: inline !important
+}
+
+#secIntro .tb
+{
+    display: none !important
+}
+
+#secIntro .tbi
+{
+    display: none !important
+}
+
+#secIntro .vtb
+{
+    display: block !important
+}
+
+#secIntro .vtbi
+{
+    display: inline !important
+}
+
+#secIntro .ltb
+{
+    display: none !important
+}
+
+#secIntro .ltbi
+{
+    display: none !important
+}
+
+#secIntro .xsp
+{
+    display: none !important
+}
+
+#secIntro .xspi
+{
+    display: none !important
+}
+
+@media screen and (max-width: 768px)
+{
+    #secIntro .lpc
+    {
+        display: none !important
+    }
+
+    #secIntro .lpci
+    {
+        display: none !important
+    }
+
+    #secIntro .tb
+    {
+        display: block !important
+    }
+
+    #secIntro .tbi
+    {
+        display: inline !important
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    #secIntro .vtb
+    {
+        display: none !important
+    }
+
+    #secIntro .vtbi
+    {
+        display: none !important
+    }
+
+    #secIntro .ltb
+    {
+        display: block !important
+    }
+
+    #secIntro .ltbi
+    {
+        display: inline !important
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    #secIntro .pc
+    {
+        display: none !important
+    }
+
+    #secIntro .pci
+    {
+        display: none !important
+    }
+
+    #secIntro .sp
+    {
+        display: block !important
+    }
+
+    #secIntro .spi
+    {
+        display: inline !important
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    #secIntro .pc
+    {
+        display: none !important
+    }
+
+    #secIntro .pci
+    {
+        display: none !important
+    }
+
+    #secIntro .sp
+    {
+        display: block !important
+    }
+
+    #secIntro .spi
+    {
+        display: inline !important
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    #secIntro .sp.ex-xp
+    {
+        display: none !important
+    }
+
+    #secIntro .spi.ex-xp
+    {
+        display: none !important
+    }
+
+    #secIntro .ex-xp
+    {
+        display: none !important
+    }
+
+    #secIntro .xsp
+    {
+        display: block !important
+    }
+
+    #secIntro .xspi
+    {
+        display: inline !important
+    }
+}
+
+#secIntro h3.en
+{
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800
+}
+
+#secIntro h3.jp
+{
+    font-size: 38px;
+    font-weight: bold
+}
+
+@media screen and (max-width: 767px)
+{
+    #secIntro h3.en
+    {
+        font-size: 24px
+    }
+
+    #secIntro h3.jp
+    {
+        font-size: 17px;
+        letter-spacing: -0.065em
+    }
+
+    #secIntro h4.en
+    {
+        font-size: 14px
+    }
+
+    #secIntro p.lead-text
+    {
+        font-size: 18px
+    }
+
+    #secIntro p.shadow.no-sp
+    {
+        text-shadow: none
+    }
+}
+
+#secIntro .top-skip
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 49px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    transform: translateY(100px)
+}
+
+#secIntro .top-skip.show
+{
+    transform: translateY(0);
+    -webkit-transition: transform 1.15s cubic-bezier(1, 0, 0, 1) 0s;
+    -moz-transition: transform 1.15s cubic-bezier(1, 0, 0, 1) 0s;
+    -ms-transition: transform 1.15s cubic-bezier(1, 0, 0, 1) 0s;
+    -o-transition: transform 1.15s cubic-bezier(1, 0, 0, 1) 0s;
+    transition: transform 1.15s cubic-bezier(1, 0, 0, 1) 0s
+}
+
+#secIntro .top-skip.on
+{
+    -webkit-transition: transform 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -moz-transition: transform 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -ms-transition: transform 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -o-transition: transform 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    transition: transform 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0s
+}
+
+#secIntro .top-skip .bt-skip
+{
+    display: inline-block;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800
+}
+
+#secIntro .top-skip .bt-skip:hover
+{
+    opacity: 0.45
+}
+
+@media screen and (max-width: 767px)
+{
+    #secIntro .top-skip
+    {
+        bottom: 15px;
+        z-index: 10;
+        font-size: 4vw;
+        transform: translateY(50px);
+        -webkit-transition: transform 0.95s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+        -moz-transition: transform 0.95s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+        -ms-transition: transform 0.95s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+        -o-transition: transform 0.95s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+        transition: transform 0.95s cubic-bezier(0.165, 0.84, 0.44, 1) 0s
+    }
+
+    #secIntro .top-skip.on
+    {
+        -webkit-transition: transform 0.95s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -moz-transition: transform 0.95s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -ms-transition: transform 0.95s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -o-transition: transform 0.95s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        transition: transform 0.95s cubic-bezier(0.19, 1, 0.22, 1) 0s
+    }
+
+    #secIntro .top-skip .bt-skip
+    {
+        display: inline-block;
+        padding: 5px;
+        font-size: 12px
+    }
+
+    #secIntro .top-skip .bt-skip:hover
+    {
+        opacity: 1.0
+    }
+}
+
+#secIntro .intro-animation-block
+{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center
+}
+
+#secIntro .intro-animation-block h3
+{
+    color: #FFFFFF;
+    margin: 0.75em 0;
+    -webkit-transition: -webkit-transform 1.75s cubic-bezier(0.19, 1, 0.22, 1) 0s,opacity 0.75s linear 0s;
+    -moz-transition: -moz-transform 1.75s cubic-bezier(0.19, 1, 0.22, 1) 0s,opacity 0.75s linear 0s;
+    -ms-transition: -ms-transform 1.75s cubic-bezier(0.19, 1, 0.22, 1) 0s,opacity 0.75s linear 0s;
+    -o-transition: -o-transform 1.75s cubic-bezier(0.19, 1, 0.22, 1) 0s,opacity 0.75s linear 0s;
+    transition: transform 1.75s cubic-bezier(0.19, 1, 0.22, 1) 0s,opacity 0.75s linear 0s;
+    opacity: 0.0;
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px)
+}
+
+#secIntro .intro-animation-block h3.show
+{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1.0
+}
+
+#secIntro .intro-animation-block h3.en
+{
+    line-height: 1.185
+}
+
+#secIntro .intro-animation-block h3.jp
+{
+    line-height: 1.425
+}
+
+#secIntro .intro-animation-block:before,#secIntro .intro-animation-block:after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    -webkit-transition: height 0.85s cubic-bezier(0.075, 0.82, 0.165, 1),transform 0.85s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: height 0.85s cubic-bezier(0.075, 0.82, 0.165, 1),transform 0.85s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition: height 0.85s cubic-bezier(0.075, 0.82, 0.165, 1),transform 0.85s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: height 0.85s cubic-bezier(0.075, 0.82, 0.165, 1),transform 0.85s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.85s cubic-bezier(0.075, 0.82, 0.165, 1),transform 0.85s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgba(255,255,255,0.5)
+}
+
+#secIntro .intro-animation-block:before
+{
+    height: 0px;
+    transform: translateY(100px)
+}
+
+#secIntro .intro-animation-block:after
+{
+    height: 0px;
+    transform: translateY(-100px)
+}
+
+#secIntro .intro-animation-block[data-animation-index="1"]:before
+{
+    top: -7vh
+}
+
+#secIntro .intro-animation-block[data-animation-index="1"]:after
+{
+    bottom: -8vh
+}
+
+#secIntro .intro-animation-block[data-animation-index="2"]:before
+{
+    top: -7vh
+}
+
+#secIntro .intro-animation-block[data-animation-index="2"]:after
+{
+    bottom: -8vh
+}
+
+#secIntro .intro-animation-block[data-animation-index="3"]:before
+{
+    top: -5vh
+}
+
+#secIntro .intro-animation-block[data-animation-index="3"]:after
+{
+    bottom: -6vh
+}
+
+#secIntro .intro-animation-block[data-animation-index="4"]:before
+{
+    top: -7vh
+}
+
+#secIntro .intro-animation-block[data-animation-index="4"]:after
+{
+    bottom: -8vh
+}
+
+#secIntro .intro-animation-block.start
+{
+    visibility: visible
+}
+
+#secIntro .intro-animation-block.start:before,#secIntro .intro-animation-block.start:after
+{
+    height: 80px;
+    transform: translateY(0px)
+}
+
+#secIntro .intro-animation-block.start:before
+{
+    transform: translateY(-20px)
+}
+
+#secIntro .intro-animation-block.start:after
+{
+    transform: translateY(20px)
+}
+
+#secIntro .intro-animation-block.start.finish:before
+{
+    height: 0px;
+    transform: translateY(-80px)
+}
+
+#secIntro .intro-animation-block.start.finish:after
+{
+    height: 0px;
+    transform: translateY(80px)
+}
+
+#secIntro .intro-animation-block.start.finish h3
+{
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0.0
+}
+
+#secIntro .intro-animation-block.start.finish h3.en
+{
+    -webkit-transition: -webkit-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s;
+    -moz-transition: -moz-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s;
+    -ms-transition: -ms-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s;
+    -o-transition: -o-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s;
+    transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s
+}
+
+#secIntro .intro-animation-block.start.finish h3.jp
+{
+    -webkit-transition: -webkit-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s;
+    -moz-transition: -moz-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s;
+    -ms-transition: -ms-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s;
+    -o-transition: -o-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s;
+    transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s
+}
+
+@media screen and (max-width: 767px)
+{
+    #secIntro .intro-animation-block h3
+    {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    #secIntro .intro-animation-block:before
+    {
+        transform: translateY(55px)
+    }
+
+    #secIntro .intro-animation-block:after
+    {
+        transform: translateY(-55px)
+    }
+
+    #secIntro .intro-animation-block[data-animation-index="1"]:before,#secIntro .intro-animation-block[data-animation-index="2"]:before,#secIntro .intro-animation-block[data-animation-index="3"]:before,#secIntro .intro-animation-block[data-animation-index="4"]:before
+    {
+        top: -50px
+    }
+
+    #secIntro .intro-animation-block[data-animation-index="1"]:after,#secIntro .intro-animation-block[data-animation-index="2"]:after,#secIntro .intro-animation-block[data-animation-index="3"]:after,#secIntro .intro-animation-block[data-animation-index="4"]:after
+    {
+        bottom: -50px
+    }
+
+    #secIntro .intro-animation-block.start:before,#secIntro .intro-animation-block.start:after
+    {
+        height: 45px
+    }
+
+    #secIntro .intro-animation-block.start:before
+    {
+        transform: translateY(-10px)
+    }
+
+    #secIntro .intro-animation-block.start:after
+    {
+        transform: translateY(10px)
+    }
+
+    #secIntro .intro-animation-block.start.finish:before
+    {
+        transform: translateY(-45px)
+    }
+
+    #secIntro .intro-animation-block.start.finish:after
+    {
+        transform: translateY(45px)
+    }
+
+    #secIntro .intro-animation-block.start.finish h3
+    {
+        -webkit-transform: translateY(-60px);
+        -moz-transform: translateY(-60px);
+        -ms-transform: translateY(-60px);
+        transform: translateY(-60px)
+    }
+
+    #secIntro .intro-animation-block.start.finish h3.en
+    {
+        -webkit-transition: -webkit-transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s;
+        -moz-transition: -moz-transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s;
+        -ms-transition: -ms-transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s;
+        -o-transition: -o-transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s;
+        transition: transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.25s linear 0s
+    }
+
+    #secIntro .intro-animation-block.start.finish h3.jp
+    {
+        -webkit-transition: -webkit-transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s;
+        -moz-transition: -moz-transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s;
+        -ms-transition: -ms-transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s;
+        -o-transition: -o-transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s;
+        transition: transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1) 0.215s,opacity 0.25s linear 0.215s
+    }
+}
+
+#secIntro .intro-animation-final-block
+{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center
+}
+
+#secIntro .intro-animation-final-block.show
+{
+    visibility: visible
+}
+
+#secIntro .intro-animation-final-block h4
+{
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 14.5px;
+    line-height: 1.2;
+    width: 75%;
+    max-width: 1055px;
+    margin: 0 auto 51px;
+    text-align: left;
+    transition: transform 1.75s cubic-bezier(0.19, 1, 0.22, 1) 0.25s,opacity 0.75s linear 0.25s;
+    opacity: 0.0;
+    transform: translateY(60px)
+}
+
+#secIntro .intro-animation-final-block h4 span
+{
+    display: block
+}
+
+#secIntro .intro-animation-final-block h4.show
+{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1.0
+}
+
+#secIntro .intro-animation-final-block .copy
+{
+    position: relative;
+    width: 75%;
+    max-width: 1055px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#secIntro .intro-animation-final-block .copy .cover
+{
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 50%;
+    width: 1px;
+    height: 1px
+}
+
+#secIntro .intro-animation-final-block .copy .cover.firstAnimation
+{
+    -webkit-transition: height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),top 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),top 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition: height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),top 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),top 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),top 0.75s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+#secIntro .intro-animation-final-block .copy .cover.secondAnimation
+{
+    -webkit-transition: width 1.15s cubic-bezier(0.19, 1, 0.22, 1),left 1.15s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: width 1.15s cubic-bezier(0.19, 1, 0.22, 1),left 1.15s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: width 1.15s cubic-bezier(0.19, 1, 0.22, 1),left 1.15s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: width 1.15s cubic-bezier(0.19, 1, 0.22, 1),left 1.15s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: width 1.15s cubic-bezier(0.19, 1, 0.22, 1),left 1.15s cubic-bezier(0.19, 1, 0.22, 1)
+}
+
+#secIntro .intro-animation-final-block .copy .cover.thirdAnimation
+{
+    -webkit-transition: width 1.45s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: width 1.45s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: width 1.45s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: width 1.45s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: width 1.45s cubic-bezier(0.19, 1, 0.22, 1)
+}
+
+#secIntro .intro-animation-final-block .copy h1
+{
+    width: 100%;
+    padding-top: 27.3652%;
+    line-height: 1.0
+}
+
+#secIntro .intro-animation-final-block .copy h1 #svg
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#secIntro .intro-animation-final-block .copy h1 #svg path,#secIntro .intro-animation-final-block .copy h1 #svg polygon
+{
+    stroke: transparent;
+    fill: transparent
+}
+
+#secIntro .intro-animation-final-block .copy h1 #svg.start .st2
+{
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    stroke-width: .5;
+    stroke: #FFF;
+    stroke-dashoffset: 2000
+}
+
+#secIntro .intro-animation-final-block .copy h1 #svg.show .st2
+{
+    animation: st2_anime 3s ease-in .5s forwards
+}
+
+#secIntro .intro-animation-final-block .copy h1 #svg.show-fill path,#secIntro .intro-animation-final-block .copy h1 #svg.show-fill polygon
+{
+    stroke: white;
+    fill: white
+}
+
+@media screen and (max-width: 767px)
+{
+    #secIntro .intro-animation-final-block .copy
+    {
+        width: 83.2%;
+        max-width: 640px
+    }
+
+    #secIntro .intro-animation-final-block h4
+    {
+        width: 83.2%;
+        max-width: 640px;
+        font-size: 1.9333vw;
+        margin: -18vw auto 3.5vw
+    }
+
+    #secIntro .intro-animation-final-block .copy h1
+    {
+        width: 100%;
+        height: 22.8vw;
+        padding-top: 0
+    }
+
+    #secIntro .intro-animation-final-block .copy h1 #svg
+    {
+        width: 83.2vw;
+        height: 22.8vw;
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+}
+
+#secIntro .scroll
+{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0
+}
+
+#secIntro .scroll.show
+{
+    opacity: 1
+}
+
+#secIntro .scroll.show a
+{
+    display: inline-block;
+    animation: scrollMotion 3.5s infinite;
+    transition: opacity 1.15s cubic-bezier(1, 0, 0, 1) 0s
+}
+
+#secIntro .scroll a
+{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: none
+}
+
+#secIntro .scroll a:after
+{
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: relative;
+    top: 0px；
+}
+
+@keyframes st2_anime
+{
+    0%
+    {
+        stroke-dashoffset: 2000;
+        fill: transparent
+    }
+
+    50%
+    {
+        fill: transparent
+    }
+
+    100%
+    {
+        stroke-dashoffset: 0;
+        fill: #FFF
+    }
+}
+
+@keyframes st2_anime_ie
+{
+    0%
+    {
+        opacity: 0
+    }
+
+    100%
+    {
+        opacity: 1
+    }
+}
+
+.ie #secIntro .intro-animation-final-block .copy h1 #svg .st2
+{
+    opacity: 0
+}
+
+.ie #secIntro .intro-animation-final-block .copy h1 #svg.show-fill .st2
+{
+    animation: st2_anime_ie 0 ease -1s forwards !important
+}
+
+@keyframes scrollMotion
+{
+    0%
+    {
+        transform: translateY(0)
+    }
+
+    80%
+    {
+        transform: translateY(0)
+    }
+
+    89%
+    {
+        transform: translateY(40px)
+    }
+
+    90%
+    {
+        transform: translateY(-40px)
+    }
+
+    100%
+    {
+        transform: translateY(0)
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .ltb
+    {
+        display: block !important
+    }
+
+    #secIntro,html,body,#wrap,main
+    {
+        height: 100%
+    }
+
+    body.mainContentsHidden
+    {
+        height: 100%
+    }
+
+    body.mainContentsShow
+    {
+        height: auto
+    }
+
+    #secIntro .scroll
+    {
+        bottom: 0
+    }
+
+    #secIntro .scroll a
+    {
+        display: inline-block;
+        width: 10.6666vw;
+        height: 10.6666vw;
+        background: none
+    }
+
+    #secIntro .scroll a:after
+    {
+        display: inline-block;
+        content: "";
+        width: 3.2vw;
+        height: 3.2vw;
+        transform: rotate(45deg);
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        position: relative;
+        top: 6px
+    }
+}
+
+#secWhatIsGate
+{
+    margin-bottom: 120px
+}
+
+#secWhatIsGate .secMark
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 220px
+}
+
+#secWhatIsGate .secMark .boxMark
+{
+    width: calc(100% / 3);
+    height: 334px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    opacity: 0
+}
+
+#secWhatIsGate .secMark .boxMark span
+{
+    display: block;
+    position: absolute;
+    background-color: white
+}
+
+#secWhatIsGate .secMark .fair
+{
+    background-color: rgba(0,195,255,0.95);
+    transform: translateY(50px)
+}
+
+#secWhatIsGate .secMark .fair .mark-container
+{
+    width: 135px;
+    height: 84px;
+    position: relative
+}
+
+#secWhatIsGate .secMark .fair .mark-container .bar1
+{
+    width: 0px;
+    top: 28px;
+    height: 29px
+}
+
+#secWhatIsGate .secMark .fair .mark-container .bar2
+{
+    width: 0px;
+    bottom: 28px;
+    height: 29px
+}
+
+#secWhatIsGate .secMark .simple
+{
+    top: 102px;
+    background-color: rgba(255,0,150,0.95);
+    transform: translateY(132px)
+}
+
+#secWhatIsGate .secMark .simple .mark-container
+{
+    width: 134px;
+    height: 134px;
+    position: relative
+}
+
+#secWhatIsGate .secMark .simple .mark-container .bar1
+{
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 28px
+}
+
+#secWhatIsGate .secMark .simple .mark-container .bar2
+{
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 28px
+}
+
+#secWhatIsGate .secMark .simple .mark-container .bar3
+{
+    bottom: 0;
+    left: 0;
+    width: 28px;
+    height: 0px
+}
+
+#secWhatIsGate .secMark .simple .mark-container .bar4
+{
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 0px
+}
+
+#secWhatIsGate .secMark .innovative
+{
+    top: 204px;
+    background-color: rgba(140,240,0,0.95);
+    transform: translateY(264px)
+}
+
+#secWhatIsGate .secMark .innovative .mark-container
+{
+    width: 135px;
+    height: 135px;
+    position: relative
+}
+
+#secWhatIsGate .secMark .innovative .mark-container .bar1
+{
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 28px
+}
+
+#secWhatIsGate .secMark .innovative .mark-container .bar2
+{
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 0px
+}
+
+#secWhatIsGate .secMark .innovative .mark-container .bar3
+{
+    top: 21px;
+    right: 0px;
+    width: 28px;
+    height: 0px;
+    transform-origin: top right;
+    transform: rotate(45deg)
+}
+
+#secWhatIsGate .secMark.show .fair
+{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1),opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+#secWhatIsGate .secMark.show .fair .mark-container span
+{
+    transition: width 0.65s cubic-bezier(0.19, 1, 0.22, 1) 0.4s,top 0.65s cubic-bezier(0.19, 1, 0.22, 1) 0.7s,bottom 0.65s cubic-bezier(0.19, 1, 0.22, 1) 0.7s
+}
+
+#secWhatIsGate .secMark.show .fair .mark-container .bar1
+{
+    width: 135px;
+    top: 0
+}
+
+#secWhatIsGate .secMark.show .fair .mark-container .bar2
+{
+    width: 135px;
+    bottom: 0
+}
+
+#secWhatIsGate .secMark.show .simple
+{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1),opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+#secWhatIsGate .secMark.show .simple .mark-container span
+{
+    transition: width 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0.6s,height 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0.6s
+}
+
+#secWhatIsGate .secMark.show .simple .mark-container .bar1
+{
+    width: 134px
+}
+
+#secWhatIsGate .secMark.show .simple .mark-container .bar2
+{
+    width: 134px
+}
+
+#secWhatIsGate .secMark.show .simple .mark-container .bar3
+{
+    height: 134px
+}
+
+#secWhatIsGate .secMark.show .simple .mark-container .bar4
+{
+    height: 134px
+}
+
+#secWhatIsGate .secMark.show .innovative
+{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1),opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+#secWhatIsGate .secMark.show .innovative .mark-container span
+{
+    transition: width 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0.9s,height 1.25s cubic-bezier(0.19, 1, 0.22, 1) 0.9s
+}
+
+#secWhatIsGate .secMark.show .innovative .mark-container .bar1
+{
+    width: 135px
+}
+
+#secWhatIsGate .secMark.show .innovative .mark-container .bar2
+{
+    height: 135px
+}
+
+#secWhatIsGate .secMark.show .innovative .mark-container .bar3
+{
+    height: 162px
+}
+
+#secWhatIsGate h2
+{
+    line-height: 0.9;
+    margin: 0 auto 51px
+}
+
+#secWhatIsGate h2 span
+{
+    display: block;
+    transform: translateX(-100%);
+    line-height: 0
+}
+
+#secWhatIsGate h2 span:nth-child(1) svg
+{
+    width: 451px;
+    height: 91.44px;
+    margin-bottom: 10px
+}
+
+#secWhatIsGate h2 span:nth-child(2) svg
+{
+    width: 573px;
+    height: 90.83px
+}
+
+#secWhatIsGate .lead
+{
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0 0 62px 165px
+}
+
+#secWhatIsGate .lead span
+{
+    display: block;
+    transform: translateY(100%)
+}
+
+#secWhatIsGate .word
+{
+    position: absolute;
+    top: 611px;
+    right: 155px;
+    overflow: hidden
+}
+
+#secWhatIsGate .word li
+{
+    display: block;
+    transform: translateX(-100%);
+    line-height: 0
+}
+
+#secWhatIsGate .word li:nth-child(n+2)
+{
+    margin-top: 10px
+}
+
+#secWhatIsGate .word li:nth-child(1) svg
+{
+    width: 62.687px;
+    height: 18.18px
+}
+
+#secWhatIsGate .word li:nth-child(2) svg
+{
+    width: 101.344px;
+    height: 18.93px
+}
+
+#secWhatIsGate .word li:nth-child(3) svg
+{
+    width: 172.906px;
+    height: 18.94px
+}
+
+#secWhatIsGate .btnArea
+{
+    justify-content: flex-end
+}
+
+#secWhatIsGate .btnArea>*
+{
+    width: calc(100% / 3)
+}
+
+#secWhatIsGate .btnArea .btn
+{
+    margin-top: -38px
+}
+
+#secWhatIsGate .show h2 span
+{
+    transform: translateX(0);
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0, 1)
+}
+
+#secWhatIsGate .show h2 span:nth-child(2)
+{
+    transition-delay: 0.1s
+}
+
+#secWhatIsGate .show .word li
+{
+    transform: translateX(0);
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+#secWhatIsGate .show .word li:nth-child(1)
+{
+    transition-delay: 0.3s
+}
+
+#secWhatIsGate .show .word li:nth-child(2)
+{
+    transition-delay: 0.35s
+}
+
+#secWhatIsGate .show .word li:nth-child(3)
+{
+    transition-delay: 0.4s
+}
+
+#secWhatIsGate .show .lead span
+{
+    transform: translateY(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+}
+
+#secWhatIsGate .show .btnArea .box01
+{
+    transition: transform 0.65s cubic-bezier(0.19, 1, 0.22, 1) 0.6s
+}
+
+#secWhatIsGate .show .btnArea .box01 p span
+{
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s
+}
+
+#secWhatIsGate .show .btnArea .btn>a
+{
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1s
+}
+
+@media screen and (max-width: 767px)
+{
+    #secWhatIsGate
+    {
+        margin-bottom: 0;
+        padding-bottom: 16vw
+    }
+
+    #secWhatIsGate .secMark
+    {
+        height: 50.8vw;
+        margin-bottom: -2.8vw
+    }
+
+    #secWhatIsGate .secMark .boxMark
+    {
+        height: 31.4666vw
+    }
+
+    #secWhatIsGate .secMark .fair
+    {
+        transform: translateY(9.6vw)
+    }
+
+    #secWhatIsGate .secMark .fair .mark-container
+    {
+        width: 12.8vw;
+        height: 8vw
+    }
+
+    #secWhatIsGate .secMark .fair .mark-container .bar1
+    {
+        top: 2.6666vw;
+        height: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark .fair .mark-container .bar2
+    {
+        bottom: 2.6666vw;
+        height: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark .simple
+    {
+        top: 9.6vw;
+        transform: translateY(19.2vw)
+    }
+
+    #secWhatIsGate .secMark .simple .mark-container
+    {
+        width: 12.8vw;
+        height: 12.8vw
+    }
+
+    #secWhatIsGate .secMark .simple .mark-container .bar1
+    {
+        height: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark .simple .mark-container .bar2
+    {
+        height: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark .simple .mark-container .bar3
+    {
+        width: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark .simple .mark-container .bar4
+    {
+        width: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark .innovative
+    {
+        top: 19.4666vw;
+        transform: translateY(28.8vw)
+    }
+
+    #secWhatIsGate .secMark .innovative .mark-container
+    {
+        width: 12.8vw;
+        height: 12.8vw
+    }
+
+    #secWhatIsGate .secMark .innovative .mark-container .bar1
+    {
+        height: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark .innovative .mark-container .bar2
+    {
+        width: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark .innovative .mark-container .bar3
+    {
+        top: 2vw;
+        width: 2.6666vw
+    }
+
+    #secWhatIsGate .secMark.show .fair .mark-container .bar1
+    {
+        width: 12.8vw
+    }
+
+    #secWhatIsGate .secMark.show .fair .mark-container .bar2
+    {
+        width: 12.8vw
+    }
+
+    #secWhatIsGate .secMark.show .simple .mark-container .bar1
+    {
+        width: 12.8vw
+    }
+
+    #secWhatIsGate .secMark.show .simple .mark-container .bar2
+    {
+        width: 12.8vw
+    }
+
+    #secWhatIsGate .secMark.show .simple .mark-container .bar3
+    {
+        height: 12.8vw
+    }
+
+    #secWhatIsGate .secMark.show .simple .mark-container .bar4
+    {
+        height: 12.8vw
+    }
+
+    #secWhatIsGate .secMark.show .innovative .mark-container .bar1
+    {
+        width: 12.8vw
+    }
+
+    #secWhatIsGate .secMark.show .innovative .mark-container .bar2
+    {
+        height: 12.8vw
+    }
+
+    #secWhatIsGate .secMark.show .innovative .mark-container .bar3
+    {
+        height: 15.8vw
+    }
+
+    #secWhatIsGate h2
+    {
+        margin: 0 auto 5vw
+    }
+
+    #secWhatIsGate h2 span:nth-child(1) svg
+    {
+        width: 60.1333vw;
+        height: 12.2666vw;
+        margin-bottom: 1.3333vw
+    }
+
+    #secWhatIsGate h2 span:nth-child(2) svg
+    {
+        width: 76.2666vw;
+        height: 90.83px;
+        height: 12.2666vw
+    }
+
+    #secWhatIsGate .lead
+    {
+        font-size: 3.4666vw;
+        margin: 0 0 3vw
+    }
+
+    #secWhatIsGate .word
+    {
+        display: none
+    }
+
+    #secWhatIsGate .btnArea>*
+    {
+        width: auto
+    }
+
+    #secWhatIsGate .btnArea .btn
+    {
+        margin-top: 12.8vw
+    }
+}
+
+#secGroup .inner
+{
+    overflow: inherit;
+    padding: 0 0 167px
+}
+
+#secGroup .inner>*
+{
+    position: relative;
+    z-index: 2
+}
+
+#secGroup .bg
+{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 100%;
+    height: 100%
+}
+
+#secGroup .bg ul
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: rotateY(-180deg)
+}
+
+#secGroup .bg ul li
+{
+    overflow: hidden
+}
+
+#secGroup .bg ul li img
+{
+    vertical-align: middle
+}
+
+#secGroup .bg ul li span
+{
+    display: block;
+    transform: translateX(100%)
+}
+
+#secGroup h2
+{
+    overflow: hidden;
+    line-height: 0.9;
+    margin: 127px auto 41px
+}
+
+#secGroup h2 span
+{
+    display: block;
+    transform: translateX(-100%)
+}
+
+#secGroup h2 span:nth-child(1) svg
+{
+    width: 384px;
+    height: 108.53px
+}
+
+#secGroup .lead
+{
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0 0 65px 165px
+}
+
+#secGroup .lead span
+{
+    display: block;
+    transform: translateY(100%)
+}
+
+#secGroup .btnArea
+{
+    margin-left: 165px
+}
+
+#secGroup .btnArea>*
+{
+    width: calc(100% / 3)
+}
+
+#secGroup .btnArea .btn
+{
+    margin-top: 167px
+}
+
+#secGroup.show .bg ul
+{
+    transform: rotateY(0);
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0, 1) 1.1s
+}
+
+#secGroup.show .bg ul li span
+{
+    transform: translateX(0)
+}
+
+#secGroup.show .bg ul li:nth-child(1) span
+{
+    transition: transform 1s cubic-bezier(0.4, 0, 0, 1) 0.4s
+}
+
+#secGroup.show .bg ul li:nth-child(2) span
+{
+    transition: transform 1s cubic-bezier(0.4, 0, 0, 1) 0.5s
+}
+
+#secGroup.show .bg ul li:nth-child(3) span
+{
+    transition: transform 1s cubic-bezier(0.4, 0, 0, 1) 0.6s
+}
+
+#secGroup.show .bg ul li:nth-child(4) span
+{
+    transition: transform 1s cubic-bezier(0.4, 0, 0, 1) 0.7s
+}
+
+#secGroup.show .bg ul li:nth-child(5) span
+{
+    transition: transform 1s cubic-bezier(0.4, 0, 0, 1) 0.8s
+}
+
+#secGroup.show h2 span
+{
+    transform: translateX(0);
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0, 1) 1.1s
+}
+
+#secGroup.show .lead span
+{
+    transform: translateY(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1.45s
+}
+
+#secGroup.show .btnArea .box01
+{
+    transition: transform 0.65s cubic-bezier(0.19, 1, 0.22, 1) 1.55s
+}
+
+#secGroup.show .btnArea .box01 p span
+{
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.75s
+}
+
+#secGroup.show .btnArea .btn a
+{
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1.95s
+}
+
+.edge #secGroup.animated .bg
+{
+    /* 	表示所有子元素在2D平面呈现。 */
+    transform-style: flat;
+    perspective: none
+}
+
+@media screen and (max-width: 767px)
+{
+    #secGroup .inner
+    {
+        padding: 0 0 15.8666vw
+    }
+
+    #secGroup .bg ul
+    {
+        width: 62.6666vw
+    }
+
+    #secGroup .headLine
+    {
+        margin-bottom: 72.0666vw
+    }
+
+    #secGroup h2
+    {
+        margin: 0 auto 4vw
+    }
+
+    #secGroup h2 span:nth-child(1) svg
+    {
+        width: 51.2vw;
+        height: 14.5333vw
+    }
+
+    #secGroup .lead
+    {
+        font-size: 3.4666vw;
+        margin: 0 0 3vw
+    }
+
+    #secGroup .btnArea
+    {
+        margin-left: 0
+    }
+
+    #secGroup .btnArea>*
+    {
+        width: auto
+    }
+
+    #secGroup .btnArea .btn
+    {
+        margin-top: 12.8vw
+    }
+}
+
+#secNewGraduates .inner
+{
+    padding: 1px 0 120px
+}
+
+#secNewGraduates .inner>*
+{
+    position: relative;
+    z-index: 2
+}
+
+#secNewGraduates .line
+{
+    display: flex
+}
+
+#secNewGraduates .line>li
+{
+    width: calc(100% / 3);
+    overflow: hidden
+}
+
+#secNewGraduates .line>li>div
+{
+    height: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    transform: translateY(100%)
+}
+
+#secNewGraduates .line>li p
+{
+    overflow: hidden
+}
+
+#secNewGraduates .line>li p span
+{
+    display: block;
+    transform: translateX(-100%)
+}
+
+#secNewGraduates .line>li:nth-child(2)
+{
+    position: relative;
+    top: 40px
+}
+
+#secNewGraduates .line>li:nth-child(3)
+{
+    position: relative;
+    top: 80px
+}
+
+#secNewGraduates .line.line01
+{
+    margin-bottom: 19px
+}
+
+#secNewGraduates .line.line02
+{
+    margin-bottom: 65px
+}
+
+#secNewGraduates .show .line01>li:nth-child(1) div
+{
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1) 0.5s
+}
+
+#secNewGraduates .show .line01>li:nth-child(1) p span
+{
+    transform: translateX(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s
+}
+
+#secNewGraduates .show .line01>li:nth-child(2) div
+{
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1) 0.55s
+}
+
+#secNewGraduates .show .line01>li:nth-child(2) p span
+{
+    transform: translateX(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s
+}
+
+#secNewGraduates .show .line01>li:nth-child(3) div
+{
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1) 0.6s
+}
+
+#secNewGraduates .show .line01>li:nth-child(3) p span
+{
+    transform: translateX(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1s
+}
+
+#secNewGraduates .show .line02>li:nth-child(1) div
+{
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1) 0.7s
+}
+
+#secNewGraduates .show .line02>li:nth-child(1) p span
+{
+    transform: translateX(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1s
+}
+
+#secNewGraduates .show .line02>li:nth-child(2) div
+{
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1) 0.75s
+}
+
+#secNewGraduates .show .line02>li:nth-child(2) p span
+{
+    transform: translateX(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1.1s
+}
+
+#secNewGraduates .show .line02>li:nth-child(3) div
+{
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0, 1) 0.8s
+}
+
+#secNewGraduates .show .line02>li:nth-child(3) p span
+{
+    transform: translateX(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s
+}
+
+#secNewGraduates h2
+{
+    overflow: hidden;
+    line-height: 0.9;
+    margin: 0 auto 62px
+}
+
+#secNewGraduates h2 span
+{
+    display: block;
+    transform: translateX(-100%);
+    line-height: 0
+}
+
+#secNewGraduates h2 span:nth-child(1) svg
+{
+    width: 281px;
+    height: 85.23px;
+    margin-bottom: 16px
+}
+
+#secNewGraduates h2 span:nth-child(2) svg
+{
+    width: 652px;
+    height: 90.05px
+}
+
+#secNewGraduates .lead
+{
+    font-size: 17px;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0 0 -51px 165px
+}
+
+#secNewGraduates .lead span
+{
+    display: block;
+    transform: translateY(100%)
+}
+
+#secNewGraduates .btnArea
+{
+    margin-left: 332px
+}
+
+#secNewGraduates .btnArea>*
+{
+    width: calc(100% / 3)
+}
+
+#secNewGraduates .btnArea .btn
+{
+    margin-top: 128px
+}
+
+#secNewGraduates .show h2 span
+{
+    transform: translateX(0);
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0, 1)
+}
+
+#secNewGraduates .show h2 span:nth-child(2)
+{
+    transition-delay: 0.1s
+}
+
+#secNewGraduates .show .lead span
+{
+    transform: translateY(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s
+}
+
+#secNewGraduates .show .btnArea .box01
+{
+    transition: transform 0.65s cubic-bezier(0.19, 1, 0.22, 1) 0.4s
+}
+
+#secNewGraduates .show .btnArea .box01 p span
+{
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s
+}
+
+#secNewGraduates .show .btnArea .btn a
+{
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s
+}
+
+@media screen and (max-width: 767px)
+{
+    #secNewGraduates .inner
+    {
+        padding: 0 0 16vw
+    }
+
+    #secNewGraduates .line>li>div
+    {
+        height: 31.4666vw
+    }
+
+    #secNewGraduates .line>li:nth-child(2)
+    {
+        top: 4.1333vw
+    }
+
+    #secNewGraduates .line>li:nth-child(3)
+    {
+        top: 8.2666vw
+    }
+
+    #secNewGraduates .line.line01
+    {
+        margin-bottom: 0.6666vw
+    }
+
+    #secNewGraduates .line.line02
+    {
+        margin-bottom: 14.4vw
+    }
+
+    #secNewGraduates .show .line01>li:nth-child(1) p span img,#secNewGraduates .show .line01>li:nth-child(2) p span img,#secNewGraduates .show .line01>li:nth-child(3) p span img
+    {
+        width: auto;
+        height: 6.6666vw
+    }
+
+    #secNewGraduates .show .line02>li:nth-child(1) p span img,#secNewGraduates .show .line02>li:nth-child(2) p span img
+    {
+        width: auto;
+        height: 6.6666vw
+    }
+
+    #secNewGraduates .show .line02>li:nth-child(3) p span img
+    {
+        width: auto;
+        height: 8.4vw
+    }
+
+    #secNewGraduates h2
+    {
+        margin: 0 auto 5.8666vw
+    }
+
+    #secNewGraduates h2 span:nth-child(1) svg
+    {
+        width: 37.4666vw;
+        height: 11.4666vw;
+        margin-bottom: 2.1333vw
+    }
+
+    #secNewGraduates h2 span:nth-child(2) svg
+    {
+        width: 86.9333vw;
+        height: 12.1333vw
+    }
+
+    #secNewGraduates .lead
+    {
+        font-size: 3.4666vw;
+        margin: 0 0 3vw
+    }
+
+    #secNewGraduates .btnArea
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0
+    }
+
+    #secNewGraduates .btnArea>*
+    {
+        width: 100%
+    }
+
+    #secNewGraduates .btnArea .box01
+    {
+        order: 1
+    }
+
+    #secNewGraduates .btnArea .btn
+    {
+        order: 2;
+        margin-top: 12.8vw
+    }
+}
+
+#secMidCareer .inner
+{
+    overflow: inherit;
+    padding: 0 0 170px
+}
+
+#secMidCareer .inner>*
+{
+    position: relative;
+    z-index: 2
+}
+
+#secMidCareer .headLine
+{
+    margin-bottom: 86px
+}
+
+#secMidCareer h2
+{
+    overflow: hidden;
+    line-height: 0.9;
+    margin: 0 auto 49px
+}
+
+#secMidCareer h2 span
+{
+    display: block;
+    transform: translateX(-100%)
+}
+
+#secMidCareer h2 span:nth-child(1) svg
+{
+    width: 684px;
+    height: 98.11px
+}
+
+#secMidCareer .lead
+{
+    font-size: 17px;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0 0 119px 165px
+}
+
+#secMidCareer .lead span
+{
+    display: block;
+    transform: translateY(100%)
+}
+
+#secMidCareer .btnArea>*
+{
+    width: calc(100% / 3)
+}
+
+#secMidCareer .btnArea .btn
+{
+    margin-left: 164px;
+    margin-top: 171px
+}
+
+#secMidCareer .bg
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    z-index: 1
+}
+
+#secMidCareer .bg li
+{
+    position: relative;
+    opacity: 0;
+    backface-visibility: hidden
+}
+
+#secMidCareer .bg li:nth-child(1)
+{
+    transform: rotateY(180deg);
+    left: -200px
+}
+
+#secMidCareer .bg li:nth-child(2)
+{
+    transform: rotateY(180deg);
+    left: -50px
+}
+
+#secMidCareer .bg li:nth-child(3)
+{
+    transform: rotateY(180deg)
+}
+
+#secMidCareer .bg li:nth-child(4)
+{
+    transform: rotateY(180deg);
+    left: 50px
+}
+
+#secMidCareer .bg li:nth-child(5)
+{
+    transform: rotateY(180deg);
+    left: 100px
+}
+
+#secMidCareer.show h2 span
+{
+    transform: translateX(0);
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0, 1) 1.1s
+}
+
+#secMidCareer.show .lead span
+{
+    transform: translateY(0);
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1.33s
+}
+
+#secMidCareer.show .btnArea .box01
+{
+    transition: transform 0.65s cubic-bezier(0.19, 1, 0.22, 1) 1.53s
+}
+
+#secMidCareer.show .btnArea .box01 p span
+{
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.73s
+}
+
+#secMidCareer.show .btnArea .btn a
+{
+    transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 1.78s
+}
+
+#secMidCareer.show .bg li:nth-child(1)
+{
+    transform: rotateY(0deg);
+    opacity: 1;
+    left: 0;
+    transition: transform 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s,opacity 0.3s ease-out 0.9s,left 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s
+}
+
+#secMidCareer.show .bg li:nth-child(2)
+{
+    transform: rotateY(0deg);
+    opacity: 1;
+    left: 0;
+    transition: transform 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s,opacity 0.3s ease-out 0.8s,left 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s
+}
+
+#secMidCareer.show .bg li:nth-child(3)
+{
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition: transform 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s,opacity 0.3s ease-out 0.7s
+}
+
+#secMidCareer.show .bg li:nth-child(4)
+{
+    transform: rotateY(0deg);
+    opacity: 1;
+    left: 0;
+    transition: transform 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s,opacity 0.3s ease-out 0.6s,left 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s
+}
+
+#secMidCareer.show .bg li:nth-child(5)
+{
+    transform: rotateY(0deg);
+    opacity: 1;
+    left: 0;
+    transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s,opacity 0.3s ease-out 0.5s,left 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+}
+
+#secMidCareer.animated .bg
+{
+    perspective: none
+}
+
+@media screen and (max-width: 767px)
+{
+    #secMidCareer .inner
+    {
+        padding: 0 0 15.2vw
+    }
+
+    #secMidCareer .headLine
+    {
+        margin-bottom: 28.1333vw
+    }
+
+    #secMidCareer h2
+    {
+        margin: 0 auto 7.0666vw
+    }
+
+    #secMidCareer h2 span:nth-child(1) svg
+    {
+        width: 91.2vw;
+        height: 13.2vw
+    }
+
+    #secMidCareer .lead
+    {
+        font-size: 3.4666vw;
+        margin: 0 0 3vw
+    }
+
+    #secMidCareer .btnArea>*
+    {
+        width: auto
+    }
+
+    #secMidCareer .btnArea .btn
+    {
+        margin-left: 0;
+        margin-top: 12vw
+    }
+
+    #secMidCareer .bg
+    {
+        perspective: 160px
+    }
+
+    #secMidCareer .bg li:nth-child(1)
+    {
+        left: -100px
+    }
+
+    #secMidCareer .bg li:nth-child(2)
+    {
+        left: -150px
+    }
+
+    #secMidCareer .bg li:nth-child(4)
+    {
+        left: 150px
+    }
+
+    #secMidCareer .bg li:nth-child(5)
+    {
+        left: 200px
+    }
+}
+
+a {
+    color: white !important;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.bgMain {
+    background: white;
+}
+
+.first {
+    animation: firAnimation 2s 4s linear 1;
+    position: absolute;
+    top: 50px;
+    color: white;
+    font-size: 165px;
+    text-shadow:
+        0px 0px 0 #fff,
+        1px -1px 0 #fffffb,
+        2px -2px 0 #fcfcfb,
+        3px -3px 0 #f0efee,
+        4px -4px 0 #faf2cd,
+        5px -5px 0 #fdfcf8,
+        6px -6px 0 #f8f7f6,
+        7px -7px 0 #faf8f5,
+        8px -8px 0 #d3d1c5,
+        9px -9px 0 #fffefc,
+        10px -10px 0 #fafaf8,
+        11px -11px 0 #f3f2ef,
+        12px -12px 0 rgb(250, 245, 245),
+        13px -13px 12px rgba(0, 0, 0, 0.55),
+        13px -13px 1px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes firAnimation {
+    0% {
+        transform: translateX(-1000px) scale3d(0, 0, 0) rotateX(0deg);
+
+    }
+
+    25% {
+        transform: translateX(-750px) scale3d(0.25, 0.25, 0.25) rotateX(180deg);
+    }
+
+    50% {
+        transform: translateX(-500px) scale3d(0.5, 0.5, 0.5) rotateX(360deg);
+    }
+
+    75% {
+        transform: translateX(-250px) scale3d(0.75, 0.75, 0.75) rotateX(180deg);
+    }
+
+    100% {
+        transform: translateX(0px) scale3d(1, 1, 1) rotateX(0deg);
+
+    }
+}
+
+.wordsClick {
+    transform: rotateY(360deg);
+    transition: all 2s
+}
+
+/* 立方体 */
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-27deg) rotateY(-55deg);
+    animation: willRote 5s ease-in-out infinite alternate;
+}
+
+@keyframes willRote {
+    0% {
+        transform: rotateX(-27deg) rotateY(-55deg);
+    }
+
+    50% {
+        transform: rotateX(-27deg) rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateX(-27deg) rotateY(360deg);
+    }
+}
+
+.square li {
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 40px;
+    position: absolute;
+}
+
+.square li:nth-child(1) {
+    background-color: rgba(0, 0, 255, 0.7);
+    transform: rotateX(90deg) translateZ(100PX);
+}
+
+.square li:nth-child(2) {
+    background-color: rgba(255, 69, 0, 0.7);
+    transform: rotateX(180deg) translateZ(100PX);
+}
+
+.square li:nth-child(3) {
+    background-color: rgba(11, 23, 70, 0, 7);
+    transform: rotateX(270deg) translateZ(100PX);
+}
+
+.square li:nth-child(4) {
+    background-color: rgba(255, 255, 0, 0.7);
+    transform: rotateX(360deg) translateZ(100PX);
+}
+
+.square li:nth-child(5) {
+    background-color: rgba(255, 192, 203, 0.7);
+    transform: rotateY(90deg) translateZ(100PX);
+}
+
+.square li:nth-child(6) {
+    background-color: rgba(218, 112, 214, 0.7);
+    transform: rotateY(90deg) translateZ(-100PX);
+}
+
+
+
+/* 两个等号离开的动画 */
+.leave {
+    animation: leaf 1.5s 1;
+}
+
+@keyframes leaf {
+    0% {
+        transform: translateX(0px);
+
+    }
+
+    100% {
+        transform: translateX(-400px)
+    }
+}
+
+/* 箭头离开的动画 */
+.up {
+    animation: upgo 2s 1;
+}
+
+@keyframes upgo {
+    0% {
+        transform: translate3d(0, 0, 0);
+
+    }
+
+    100% {
+        transform: translate3d(400px, -400px, 400px)
+    }
+}
+
+#secWhatIsGate .secMark .innovative {
+    top: 0px;
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+.words {
+    font-size: 22px;
+
+}
+
+.words>p:nth-child(1) {
+    animation: ani 0.8s both;
+}
+
+.words>p:nth-child(2) {
+    animation: ani 0.8s 0.8s both;
+}
+
+.words>p:nth-child(3) {
+    animation: ani 0.8s 1.6s both;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*大写的u*/
+div.flip-3d div {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s transform;
+
+}
+
+div.flip-3d div img {
+    width: 100%;
+    height: auto;
+}
+
+div.flip-3d:hover div {
+    transform: rotateY(.5turn);
+}
+
+/*图片系列*/
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.col {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.container {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back {
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+
+.front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.innerr {
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front .innerr p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .innerr p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.front .innerr span {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+@media screen and (max-width: 64rem) {
+    .col {
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .col {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem) {
+    .col {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+
+#secWhatIsGate .inner::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    left: 48%;
+    bottom: 7px;
+    z-index: 99;
+}
+
+#grop {
+    display: inline-block;
+    width: 384px;
+    height: 108.52px;
+}
+
+.ch-info-back {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ch-info {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+/* div.flip-3d div img {
+width: 100%;
+height: auto;
+} */
+.ch-info:hover {
+    transform: rotateY(.5turn);
+    /* -webkit-transform: rotate3d(0,1,0,-180deg);
+-moz-transform: rotate3d(0,1,0,-180deg);
+-o-transform: rotate3d(0,1,0,-180deg);
+-ms-transform: rotate3d(0,1,0,-180deg);
+transform: rotate3d(0,1,0,-180deg); */
+}
+
+/* .siz{
+position: relative;
+} */
+.ch-info img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ch-info .ch-info-back {
+    /* -webkit-transform: rotate3d(0,1,0,180deg);
+-moz-transform: rotate3d(0,1,0,180deg);
+-o-transform: rotate3d(0,1,0,180deg);
+-ms-transform: rotate3d(0,1,0,180deg);
+transform: rotate3d(0,1,0,180deg); */
+    transform: rotateY(.5turn);
+
+    background: #000;
+}
+
+/*U的动画*/
+.ch-info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0 15px;
+    padding: 40px 0 0 0;
+    height: 75px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow:
+        0 0 1px #fff,
+        0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ch-info p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ch-info p a {
+    display: block;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+    color: #fff222;
+    color: rgba(255, 242, 34, 0.8);
+}

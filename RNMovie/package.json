@@ -1,0 +1,38 @@
+{
+  "name": "RNMovie",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "buffer": "^5.2.1",
+    "cheerio": "0.22.0",
+    "events": "^3.0.0",
+    "react": "16.8.6",
+    "react-native": "0.60.4",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-star-rating": "^1.1.0",
+    "react-native-swiper": "^1.5.14",
+    "react-native-tab-navigator": "^0.3.4",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-video": "^5.0.0",
+    "react-native-video-controls": "^2.2.3",
+    "stream": "^0.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "react-test-renderer": "16.8.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

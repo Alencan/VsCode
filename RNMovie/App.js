@@ -16,7 +16,9 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
+
       selectedTab: 'home' // 选中的tab栏名称嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻ooooooxxxxxx
+
     }
   }
 

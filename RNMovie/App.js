@@ -16,9 +16,13 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
+<<<<<<< HEAD
 
       selectedTab: 'home' // 选中的tab栏名称嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻ooooooxxxxxxaaaaaaaaa
 
+=======
+      selectedTab: 'home' // 选中的tab栏名称嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻ooooooxxxxxxaaaaaaaa
+>>>>>>> firstbranch
     }
   }
 

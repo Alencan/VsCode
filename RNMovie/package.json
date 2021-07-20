@@ -12,7 +12,7 @@
     "cheerio": "0.22.0",
     "events": "^3.0.0",
     "react": "16.8.6",
-    "react-native": "0.60.4",
+    "react-native": "0.62.3",
     "react-native-router-flux": "^4.0.6",
     "react-native-star-rating": "^1.1.0",
     "react-native-swiper": "^1.5.14",
